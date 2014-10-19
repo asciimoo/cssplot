@@ -35,7 +35,7 @@ simple bar chart
 simple bar chart
 
 ```html
-<div class="bar-chart">
+<div class="vertical-chart">
     <ul>
         <li data-cssplot-size="100">100%</li>
         <li data-cssplot-size="30">30%</li>
