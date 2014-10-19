@@ -30,31 +30,28 @@
     min-height: 100px;
 }
 
+.bar-chart ul li {
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
 .bar-chart ul li,
 .vertical-chart ul li {
     background: #3498db;
     color: #FFFFFF;
     list-style: none;
-    flex-grow: 1;
     margin: 1px;
-    align-self: flex-end;
 }
 
 .vertical-chart {
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-    padding: 0;
-    margin: 0;
+    clear: both;
 }
 
 .vertical-chart ul {
     .width_loop(100);
     flex-direction: row;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
     padding: 0;
     margin: 0;
-    min-width: 100px;
+    width: 100%;
+    clear: both;
 }
