@@ -51,7 +51,7 @@ vertical chart
 scatterplot
 
 ```html
-<div class="scatterplot" style="height: 300px; width: 520px; margin-top: 10px">
+<div class="scatterplot">
     <ul>
         <li data-cssplot-x="50" data-cssplot-y="30">a</li>
         <li data-cssplot-x="30" data-cssplot-y="20">b</li>
