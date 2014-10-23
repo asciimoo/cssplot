@@ -64,5 +64,4 @@ Simple, css-only plotting.
     </ul>
 </div>
 ```
-
 ![scatterplot](docs/images/cssplot_scatterplot.png)
