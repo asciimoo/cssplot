@@ -13,7 +13,7 @@ Simple, css-only plotting.
 
 ### Examples
 
-bar chart
+#### bar chart
 
 ```html
 <div class="bar-chart">
@@ -32,7 +32,7 @@ bar chart
 ![bar chart](docs/images/cssplot_bar_chart.png)
 
 
-vertical chart
+#### vertical chart
 
 ```html
 <div class="vertical-chart">
@@ -48,7 +48,7 @@ vertical chart
 ![bar chart](docs/images/cssplot_vertical_chart.png)
 
 
-scatterplot
+#### scatterplot
 
 ```html
 <div class="scatterplot">
