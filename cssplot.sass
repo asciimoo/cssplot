@@ -1,0 +1,87 @@
+$plot-color: #3498db
+
+@mixin height_loop($p: 100)
+  @for $_ from 0 to $p + 1
+    & [data-cp-size="#{$_}"]
+      height: $_ * 1%
+
+@mixin width_loop($p: 100)
+  @for $_ from 0 to $p + 1
+    & [data-cp-size="#{$_}"]
+      width: $_ * 1%
+
+@mixin x_loop($p: 100)
+  @for $_ from 0 to $p + 1
+    & [data-cp-x="#{$_}"]
+      left: $_ * 1%
+
+@mixin y_loop($p: 100)
+  @for $_ from 0 to $p + 1
+    & [data-cp-y="#{$_}"]
+      bottom: $_ * 1%
+
+.bar-chart,
+.vertical-chart,
+.scatterplot
+  position: relative
+  min-width: 100px
+  min-height: 100px
+  padding: 0
+  margin: 0
+
+.bar-chart .container
+  +height_loop
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  position: absolute
+  text-align: center
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  padding: 0
+  margin: 0
+  min-height: 100px
+
+.bar-chart [data-cp-size]
+  flex-grow: 1
+  align-self: flex-end
+
+.bar-chart [data-cp-size],
+.vertical-chart [data-cp-size]
+  background: $plot-color
+  color: #FFFFFF
+  list-style: none
+  border: 1px solid #FFFFFF
+  box-sizing: border-box
+
+.vertical-chart
+  clear: both
+  .container
+    +width_loop
+    flex-direction: row
+    padding: 0
+    margin: 0
+    width: 100%
+
+.scatterplot .container
+  +x_loop
+  +y_loop
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: 0
+  padding: 0
+
+.scatterplot [data-cp-x],
+.scatterplot [data-cp-y]
+  position: absolute
+  height: 0
+  width: 0
+  list-style: none
+  overflow: hidden
+  border: 6px solid $plot-color
+  border-radius: 100%
