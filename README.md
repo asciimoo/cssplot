@@ -65,3 +65,10 @@ Simple, css-only plotting.
 </div>
 ```
 ![scatterplot](docs/images/cssplot_scatterplot.png)
+
+
+Alternatively `cssplot.base.css` can be used alone with the following modifications:
+
+ * Bar chart: use `class="chart-column" style="height: 99.0%"` instead of `data-cp-size="99"`
+ * Vertical bar chart: use `class="chart-row" style="width: 99.0%"` instead of `data-cp-size="99"`
+ * Scatter plot: use `class="chart-dot" style="left: 20.0%; bottom: 10.0%"` instead of `data-cp-x="20" data-cp-y="10"`
