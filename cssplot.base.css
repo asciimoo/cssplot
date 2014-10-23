@@ -21,12 +21,15 @@
   margin: 0;
   min-height: 100px;
 }
-.bar-chart .chart-column {
+.bar-chart .chart-column,
+.bar-chart [data-cp-size] {
   flex-grow: 1;
   align-self: flex-end;
 }
 .bar-chart .chart-column,
-.vertical-chart .chart-row {
+.vertical-chart .chart-row,
+.bar-chart [data-cp-size],
+.vertical-chart [data-cp-size] {
   background: #3498db;
   color: #FFFFFF;
   list-style: none;
@@ -52,7 +55,9 @@
   padding: 0;
 }
 .scatterplot .chart-dot,
-.scatterplot .chart-dot {
+.scatterplot .chart-dot,
+.scatterplot [data-cp-x],
+.scatterplot [data-cp-y] {
   position: absolute;
   height: 0;
   width: 0;
