@@ -9,7 +9,17 @@
   li[data-cssplot-size="@{percent_counter}"] { width: ~"@{percent_counter}%"; };
 }
 
-.bar-chart, .vertical-chart {
+.x_loop(@percent_counter) when (@percent_counter >= 0) {
+  .x_loop((@percent_counter - 1));
+  li[data-cssplot-x="@{percent_counter}"] { left: ~"@{percent_counter}%"; };
+}
+
+.y_loop(@percent_counter) when (@percent_counter >= 0) {
+  .y_loop((@percent_counter - 1));
+  li[data-cssplot-y="@{percent_counter}"] { bottom: ~"@{percent_counter}%"; };
+}
+
+.bar-chart, .vertical-chart, .scatterplot {
     position: relative;
     min-width: 100px;
     min-height: 100px;
@@ -54,4 +64,25 @@
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.scatterplot ul {
+    .x_loop(100);
+    .y_loop(100);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0; padding: 0;
+}
+
+.scatterplot ul li {
+    position: absolute;
+    height: 0;
+    width: 0;
+    list-style: none;
+    overflow: hidden;
+    border: 6px solid #3498db;
+    border-radius: 100%;
 }

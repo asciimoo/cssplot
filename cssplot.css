@@ -1,5 +1,6 @@
 .bar-chart,
-.vertical-chart {
+.vertical-chart,
+.scatterplot {
   position: relative;
   min-width: 100px;
   min-height: 100px;
@@ -646,4 +647,628 @@
 }
 .vertical-chart ul li[data-cssplot-size="100"] {
   width: 100%;
+}
+.scatterplot ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.scatterplot ul li[data-cssplot-x="0"] {
+  left: 0%;
+}
+.scatterplot ul li[data-cssplot-x="1"] {
+  left: 1%;
+}
+.scatterplot ul li[data-cssplot-x="2"] {
+  left: 2%;
+}
+.scatterplot ul li[data-cssplot-x="3"] {
+  left: 3%;
+}
+.scatterplot ul li[data-cssplot-x="4"] {
+  left: 4%;
+}
+.scatterplot ul li[data-cssplot-x="5"] {
+  left: 5%;
+}
+.scatterplot ul li[data-cssplot-x="6"] {
+  left: 6%;
+}
+.scatterplot ul li[data-cssplot-x="7"] {
+  left: 7%;
+}
+.scatterplot ul li[data-cssplot-x="8"] {
+  left: 8%;
+}
+.scatterplot ul li[data-cssplot-x="9"] {
+  left: 9%;
+}
+.scatterplot ul li[data-cssplot-x="10"] {
+  left: 10%;
+}
+.scatterplot ul li[data-cssplot-x="11"] {
+  left: 11%;
+}
+.scatterplot ul li[data-cssplot-x="12"] {
+  left: 12%;
+}
+.scatterplot ul li[data-cssplot-x="13"] {
+  left: 13%;
+}
+.scatterplot ul li[data-cssplot-x="14"] {
+  left: 14%;
+}
+.scatterplot ul li[data-cssplot-x="15"] {
+  left: 15%;
+}
+.scatterplot ul li[data-cssplot-x="16"] {
+  left: 16%;
+}
+.scatterplot ul li[data-cssplot-x="17"] {
+  left: 17%;
+}
+.scatterplot ul li[data-cssplot-x="18"] {
+  left: 18%;
+}
+.scatterplot ul li[data-cssplot-x="19"] {
+  left: 19%;
+}
+.scatterplot ul li[data-cssplot-x="20"] {
+  left: 20%;
+}
+.scatterplot ul li[data-cssplot-x="21"] {
+  left: 21%;
+}
+.scatterplot ul li[data-cssplot-x="22"] {
+  left: 22%;
+}
+.scatterplot ul li[data-cssplot-x="23"] {
+  left: 23%;
+}
+.scatterplot ul li[data-cssplot-x="24"] {
+  left: 24%;
+}
+.scatterplot ul li[data-cssplot-x="25"] {
+  left: 25%;
+}
+.scatterplot ul li[data-cssplot-x="26"] {
+  left: 26%;
+}
+.scatterplot ul li[data-cssplot-x="27"] {
+  left: 27%;
+}
+.scatterplot ul li[data-cssplot-x="28"] {
+  left: 28%;
+}
+.scatterplot ul li[data-cssplot-x="29"] {
+  left: 29%;
+}
+.scatterplot ul li[data-cssplot-x="30"] {
+  left: 30%;
+}
+.scatterplot ul li[data-cssplot-x="31"] {
+  left: 31%;
+}
+.scatterplot ul li[data-cssplot-x="32"] {
+  left: 32%;
+}
+.scatterplot ul li[data-cssplot-x="33"] {
+  left: 33%;
+}
+.scatterplot ul li[data-cssplot-x="34"] {
+  left: 34%;
+}
+.scatterplot ul li[data-cssplot-x="35"] {
+  left: 35%;
+}
+.scatterplot ul li[data-cssplot-x="36"] {
+  left: 36%;
+}
+.scatterplot ul li[data-cssplot-x="37"] {
+  left: 37%;
+}
+.scatterplot ul li[data-cssplot-x="38"] {
+  left: 38%;
+}
+.scatterplot ul li[data-cssplot-x="39"] {
+  left: 39%;
+}
+.scatterplot ul li[data-cssplot-x="40"] {
+  left: 40%;
+}
+.scatterplot ul li[data-cssplot-x="41"] {
+  left: 41%;
+}
+.scatterplot ul li[data-cssplot-x="42"] {
+  left: 42%;
+}
+.scatterplot ul li[data-cssplot-x="43"] {
+  left: 43%;
+}
+.scatterplot ul li[data-cssplot-x="44"] {
+  left: 44%;
+}
+.scatterplot ul li[data-cssplot-x="45"] {
+  left: 45%;
+}
+.scatterplot ul li[data-cssplot-x="46"] {
+  left: 46%;
+}
+.scatterplot ul li[data-cssplot-x="47"] {
+  left: 47%;
+}
+.scatterplot ul li[data-cssplot-x="48"] {
+  left: 48%;
+}
+.scatterplot ul li[data-cssplot-x="49"] {
+  left: 49%;
+}
+.scatterplot ul li[data-cssplot-x="50"] {
+  left: 50%;
+}
+.scatterplot ul li[data-cssplot-x="51"] {
+  left: 51%;
+}
+.scatterplot ul li[data-cssplot-x="52"] {
+  left: 52%;
+}
+.scatterplot ul li[data-cssplot-x="53"] {
+  left: 53%;
+}
+.scatterplot ul li[data-cssplot-x="54"] {
+  left: 54%;
+}
+.scatterplot ul li[data-cssplot-x="55"] {
+  left: 55%;
+}
+.scatterplot ul li[data-cssplot-x="56"] {
+  left: 56%;
+}
+.scatterplot ul li[data-cssplot-x="57"] {
+  left: 57%;
+}
+.scatterplot ul li[data-cssplot-x="58"] {
+  left: 58%;
+}
+.scatterplot ul li[data-cssplot-x="59"] {
+  left: 59%;
+}
+.scatterplot ul li[data-cssplot-x="60"] {
+  left: 60%;
+}
+.scatterplot ul li[data-cssplot-x="61"] {
+  left: 61%;
+}
+.scatterplot ul li[data-cssplot-x="62"] {
+  left: 62%;
+}
+.scatterplot ul li[data-cssplot-x="63"] {
+  left: 63%;
+}
+.scatterplot ul li[data-cssplot-x="64"] {
+  left: 64%;
+}
+.scatterplot ul li[data-cssplot-x="65"] {
+  left: 65%;
+}
+.scatterplot ul li[data-cssplot-x="66"] {
+  left: 66%;
+}
+.scatterplot ul li[data-cssplot-x="67"] {
+  left: 67%;
+}
+.scatterplot ul li[data-cssplot-x="68"] {
+  left: 68%;
+}
+.scatterplot ul li[data-cssplot-x="69"] {
+  left: 69%;
+}
+.scatterplot ul li[data-cssplot-x="70"] {
+  left: 70%;
+}
+.scatterplot ul li[data-cssplot-x="71"] {
+  left: 71%;
+}
+.scatterplot ul li[data-cssplot-x="72"] {
+  left: 72%;
+}
+.scatterplot ul li[data-cssplot-x="73"] {
+  left: 73%;
+}
+.scatterplot ul li[data-cssplot-x="74"] {
+  left: 74%;
+}
+.scatterplot ul li[data-cssplot-x="75"] {
+  left: 75%;
+}
+.scatterplot ul li[data-cssplot-x="76"] {
+  left: 76%;
+}
+.scatterplot ul li[data-cssplot-x="77"] {
+  left: 77%;
+}
+.scatterplot ul li[data-cssplot-x="78"] {
+  left: 78%;
+}
+.scatterplot ul li[data-cssplot-x="79"] {
+  left: 79%;
+}
+.scatterplot ul li[data-cssplot-x="80"] {
+  left: 80%;
+}
+.scatterplot ul li[data-cssplot-x="81"] {
+  left: 81%;
+}
+.scatterplot ul li[data-cssplot-x="82"] {
+  left: 82%;
+}
+.scatterplot ul li[data-cssplot-x="83"] {
+  left: 83%;
+}
+.scatterplot ul li[data-cssplot-x="84"] {
+  left: 84%;
+}
+.scatterplot ul li[data-cssplot-x="85"] {
+  left: 85%;
+}
+.scatterplot ul li[data-cssplot-x="86"] {
+  left: 86%;
+}
+.scatterplot ul li[data-cssplot-x="87"] {
+  left: 87%;
+}
+.scatterplot ul li[data-cssplot-x="88"] {
+  left: 88%;
+}
+.scatterplot ul li[data-cssplot-x="89"] {
+  left: 89%;
+}
+.scatterplot ul li[data-cssplot-x="90"] {
+  left: 90%;
+}
+.scatterplot ul li[data-cssplot-x="91"] {
+  left: 91%;
+}
+.scatterplot ul li[data-cssplot-x="92"] {
+  left: 92%;
+}
+.scatterplot ul li[data-cssplot-x="93"] {
+  left: 93%;
+}
+.scatterplot ul li[data-cssplot-x="94"] {
+  left: 94%;
+}
+.scatterplot ul li[data-cssplot-x="95"] {
+  left: 95%;
+}
+.scatterplot ul li[data-cssplot-x="96"] {
+  left: 96%;
+}
+.scatterplot ul li[data-cssplot-x="97"] {
+  left: 97%;
+}
+.scatterplot ul li[data-cssplot-x="98"] {
+  left: 98%;
+}
+.scatterplot ul li[data-cssplot-x="99"] {
+  left: 99%;
+}
+.scatterplot ul li[data-cssplot-x="100"] {
+  left: 100%;
+}
+.scatterplot ul li[data-cssplot-y="0"] {
+  bottom: 0%;
+}
+.scatterplot ul li[data-cssplot-y="1"] {
+  bottom: 1%;
+}
+.scatterplot ul li[data-cssplot-y="2"] {
+  bottom: 2%;
+}
+.scatterplot ul li[data-cssplot-y="3"] {
+  bottom: 3%;
+}
+.scatterplot ul li[data-cssplot-y="4"] {
+  bottom: 4%;
+}
+.scatterplot ul li[data-cssplot-y="5"] {
+  bottom: 5%;
+}
+.scatterplot ul li[data-cssplot-y="6"] {
+  bottom: 6%;
+}
+.scatterplot ul li[data-cssplot-y="7"] {
+  bottom: 7%;
+}
+.scatterplot ul li[data-cssplot-y="8"] {
+  bottom: 8%;
+}
+.scatterplot ul li[data-cssplot-y="9"] {
+  bottom: 9%;
+}
+.scatterplot ul li[data-cssplot-y="10"] {
+  bottom: 10%;
+}
+.scatterplot ul li[data-cssplot-y="11"] {
+  bottom: 11%;
+}
+.scatterplot ul li[data-cssplot-y="12"] {
+  bottom: 12%;
+}
+.scatterplot ul li[data-cssplot-y="13"] {
+  bottom: 13%;
+}
+.scatterplot ul li[data-cssplot-y="14"] {
+  bottom: 14%;
+}
+.scatterplot ul li[data-cssplot-y="15"] {
+  bottom: 15%;
+}
+.scatterplot ul li[data-cssplot-y="16"] {
+  bottom: 16%;
+}
+.scatterplot ul li[data-cssplot-y="17"] {
+  bottom: 17%;
+}
+.scatterplot ul li[data-cssplot-y="18"] {
+  bottom: 18%;
+}
+.scatterplot ul li[data-cssplot-y="19"] {
+  bottom: 19%;
+}
+.scatterplot ul li[data-cssplot-y="20"] {
+  bottom: 20%;
+}
+.scatterplot ul li[data-cssplot-y="21"] {
+  bottom: 21%;
+}
+.scatterplot ul li[data-cssplot-y="22"] {
+  bottom: 22%;
+}
+.scatterplot ul li[data-cssplot-y="23"] {
+  bottom: 23%;
+}
+.scatterplot ul li[data-cssplot-y="24"] {
+  bottom: 24%;
+}
+.scatterplot ul li[data-cssplot-y="25"] {
+  bottom: 25%;
+}
+.scatterplot ul li[data-cssplot-y="26"] {
+  bottom: 26%;
+}
+.scatterplot ul li[data-cssplot-y="27"] {
+  bottom: 27%;
+}
+.scatterplot ul li[data-cssplot-y="28"] {
+  bottom: 28%;
+}
+.scatterplot ul li[data-cssplot-y="29"] {
+  bottom: 29%;
+}
+.scatterplot ul li[data-cssplot-y="30"] {
+  bottom: 30%;
+}
+.scatterplot ul li[data-cssplot-y="31"] {
+  bottom: 31%;
+}
+.scatterplot ul li[data-cssplot-y="32"] {
+  bottom: 32%;
+}
+.scatterplot ul li[data-cssplot-y="33"] {
+  bottom: 33%;
+}
+.scatterplot ul li[data-cssplot-y="34"] {
+  bottom: 34%;
+}
+.scatterplot ul li[data-cssplot-y="35"] {
+  bottom: 35%;
+}
+.scatterplot ul li[data-cssplot-y="36"] {
+  bottom: 36%;
+}
+.scatterplot ul li[data-cssplot-y="37"] {
+  bottom: 37%;
+}
+.scatterplot ul li[data-cssplot-y="38"] {
+  bottom: 38%;
+}
+.scatterplot ul li[data-cssplot-y="39"] {
+  bottom: 39%;
+}
+.scatterplot ul li[data-cssplot-y="40"] {
+  bottom: 40%;
+}
+.scatterplot ul li[data-cssplot-y="41"] {
+  bottom: 41%;
+}
+.scatterplot ul li[data-cssplot-y="42"] {
+  bottom: 42%;
+}
+.scatterplot ul li[data-cssplot-y="43"] {
+  bottom: 43%;
+}
+.scatterplot ul li[data-cssplot-y="44"] {
+  bottom: 44%;
+}
+.scatterplot ul li[data-cssplot-y="45"] {
+  bottom: 45%;
+}
+.scatterplot ul li[data-cssplot-y="46"] {
+  bottom: 46%;
+}
+.scatterplot ul li[data-cssplot-y="47"] {
+  bottom: 47%;
+}
+.scatterplot ul li[data-cssplot-y="48"] {
+  bottom: 48%;
+}
+.scatterplot ul li[data-cssplot-y="49"] {
+  bottom: 49%;
+}
+.scatterplot ul li[data-cssplot-y="50"] {
+  bottom: 50%;
+}
+.scatterplot ul li[data-cssplot-y="51"] {
+  bottom: 51%;
+}
+.scatterplot ul li[data-cssplot-y="52"] {
+  bottom: 52%;
+}
+.scatterplot ul li[data-cssplot-y="53"] {
+  bottom: 53%;
+}
+.scatterplot ul li[data-cssplot-y="54"] {
+  bottom: 54%;
+}
+.scatterplot ul li[data-cssplot-y="55"] {
+  bottom: 55%;
+}
+.scatterplot ul li[data-cssplot-y="56"] {
+  bottom: 56%;
+}
+.scatterplot ul li[data-cssplot-y="57"] {
+  bottom: 57%;
+}
+.scatterplot ul li[data-cssplot-y="58"] {
+  bottom: 58%;
+}
+.scatterplot ul li[data-cssplot-y="59"] {
+  bottom: 59%;
+}
+.scatterplot ul li[data-cssplot-y="60"] {
+  bottom: 60%;
+}
+.scatterplot ul li[data-cssplot-y="61"] {
+  bottom: 61%;
+}
+.scatterplot ul li[data-cssplot-y="62"] {
+  bottom: 62%;
+}
+.scatterplot ul li[data-cssplot-y="63"] {
+  bottom: 63%;
+}
+.scatterplot ul li[data-cssplot-y="64"] {
+  bottom: 64%;
+}
+.scatterplot ul li[data-cssplot-y="65"] {
+  bottom: 65%;
+}
+.scatterplot ul li[data-cssplot-y="66"] {
+  bottom: 66%;
+}
+.scatterplot ul li[data-cssplot-y="67"] {
+  bottom: 67%;
+}
+.scatterplot ul li[data-cssplot-y="68"] {
+  bottom: 68%;
+}
+.scatterplot ul li[data-cssplot-y="69"] {
+  bottom: 69%;
+}
+.scatterplot ul li[data-cssplot-y="70"] {
+  bottom: 70%;
+}
+.scatterplot ul li[data-cssplot-y="71"] {
+  bottom: 71%;
+}
+.scatterplot ul li[data-cssplot-y="72"] {
+  bottom: 72%;
+}
+.scatterplot ul li[data-cssplot-y="73"] {
+  bottom: 73%;
+}
+.scatterplot ul li[data-cssplot-y="74"] {
+  bottom: 74%;
+}
+.scatterplot ul li[data-cssplot-y="75"] {
+  bottom: 75%;
+}
+.scatterplot ul li[data-cssplot-y="76"] {
+  bottom: 76%;
+}
+.scatterplot ul li[data-cssplot-y="77"] {
+  bottom: 77%;
+}
+.scatterplot ul li[data-cssplot-y="78"] {
+  bottom: 78%;
+}
+.scatterplot ul li[data-cssplot-y="79"] {
+  bottom: 79%;
+}
+.scatterplot ul li[data-cssplot-y="80"] {
+  bottom: 80%;
+}
+.scatterplot ul li[data-cssplot-y="81"] {
+  bottom: 81%;
+}
+.scatterplot ul li[data-cssplot-y="82"] {
+  bottom: 82%;
+}
+.scatterplot ul li[data-cssplot-y="83"] {
+  bottom: 83%;
+}
+.scatterplot ul li[data-cssplot-y="84"] {
+  bottom: 84%;
+}
+.scatterplot ul li[data-cssplot-y="85"] {
+  bottom: 85%;
+}
+.scatterplot ul li[data-cssplot-y="86"] {
+  bottom: 86%;
+}
+.scatterplot ul li[data-cssplot-y="87"] {
+  bottom: 87%;
+}
+.scatterplot ul li[data-cssplot-y="88"] {
+  bottom: 88%;
+}
+.scatterplot ul li[data-cssplot-y="89"] {
+  bottom: 89%;
+}
+.scatterplot ul li[data-cssplot-y="90"] {
+  bottom: 90%;
+}
+.scatterplot ul li[data-cssplot-y="91"] {
+  bottom: 91%;
+}
+.scatterplot ul li[data-cssplot-y="92"] {
+  bottom: 92%;
+}
+.scatterplot ul li[data-cssplot-y="93"] {
+  bottom: 93%;
+}
+.scatterplot ul li[data-cssplot-y="94"] {
+  bottom: 94%;
+}
+.scatterplot ul li[data-cssplot-y="95"] {
+  bottom: 95%;
+}
+.scatterplot ul li[data-cssplot-y="96"] {
+  bottom: 96%;
+}
+.scatterplot ul li[data-cssplot-y="97"] {
+  bottom: 97%;
+}
+.scatterplot ul li[data-cssplot-y="98"] {
+  bottom: 98%;
+}
+.scatterplot ul li[data-cssplot-y="99"] {
+  bottom: 99%;
+}
+.scatterplot ul li[data-cssplot-y="100"] {
+  bottom: 100%;
+}
+.scatterplot ul li {
+  position: absolute;
+  height: 0;
+  width: 0;
+  list-style: none;
+  overflow: hidden;
+  border: 6px solid #3498db;
+  border-radius: 100%;
 }
