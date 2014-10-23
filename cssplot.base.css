@@ -1,0 +1,63 @@
+.bar-chart,
+.vertical-chart,
+.scatterplot {
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0;
+  margin: 0;
+}
+.bar-chart .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 100px;
+}
+.bar-chart .chart-column {
+  flex-grow: 1;
+  align-self: flex-end;
+}
+.bar-chart .chart-column,
+.vertical-chart .chart-row {
+  background: #3498db;
+  color: #FFFFFF;
+  list-style: none;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.vertical-chart {
+  clear: both;
+}
+.vertical-chart .container {
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.scatterplot .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.scatterplot .chart-dot,
+.scatterplot .chart-dot {
+  position: absolute;
+  height: 0;
+  width: 0;
+  list-style: none;
+  overflow: hidden;
+  border: 6px solid #3498db;
+  border-radius: 100%;
+}

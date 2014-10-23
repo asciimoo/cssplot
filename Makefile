@@ -1,11 +1,15 @@
 
-all: style
+all: base full
 
-style:
-	@lessc cssplot.less > cssplot.css
-	@echo "[!] cssplot.css generated"
+base:
+	@lessc cssplot.base.less > cssplot.base.css
+	@echo "[!] cssplot.base.css generated"
+
+full:
+	@lessc cssplot.full.less > cssplot.full.css
+	@echo "[!] cssplot.full.css generated"
 
 clean:
 	@rm -rf *.css
 
-.PHONY: all style clean
+.PHONY: all base full clean
