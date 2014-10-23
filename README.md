@@ -17,7 +17,7 @@ Simple, css-only plotting.
 
 ```html
 <div class="bar-chart">
-    <ul>
+    <ul class="container">
         <li data-cp-size="99">99%</li>
         <li data-cp-size="50">50%</li>
         <li data-cp-size="30">30%</li>
@@ -36,7 +36,7 @@ Simple, css-only plotting.
 
 ```html
 <div class="vertical-chart">
-    <ul>
+    <ul class="container">
         <li data-cp-size="100">100%</li>
         <li data-cp-size="30">30%</li>
         <li data-cp-size="20">20%</li>
@@ -52,7 +52,7 @@ Simple, css-only plotting.
 
 ```html
 <div class="scatterplot">
-    <ul>
+    <ul class="container">
         <li data-cp-x="50" data-cp-y="30">a</li>
         <li data-cp-x="30" data-cp-y="20">b</li>
         <li data-cp-x="10" data-cp-y="5">c</li>
