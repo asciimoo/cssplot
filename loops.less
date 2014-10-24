@@ -1,0 +1,33 @@
+
+.height_loop(@percent_counter) when (@percent_counter >= 0) {
+  .height_loop((@percent_counter - 1));
+  [data-cp-size="@{percent_counter}"] { height: ~"@{percent_counter}%"; };
+}
+
+.width_loop(@percent_counter) when (@percent_counter >= 0) {
+  .width_loop((@percent_counter - 1));
+  [data-cp-size="@{percent_counter}"] { width: ~"@{percent_counter}%"; };
+}
+
+.x_loop(@percent_counter) when (@percent_counter >= 0) {
+  .x_loop((@percent_counter - 1));
+  [data-cp-x="@{percent_counter}"] { left: ~"@{percent_counter}%"; };
+}
+
+.y_loop(@percent_counter) when (@percent_counter >= 0) {
+  .y_loop((@percent_counter - 1));
+  [data-cp-y="@{percent_counter}"] { bottom: ~"@{percent_counter}%"; };
+}
+
+.bar-chart .container {
+  .height_loop(100);
+}
+
+.vertical-chart .container {
+  .width_loop(100);
+}
+
+.scatterplot .container {
+  .x_loop(100);
+  .y_loop(100);
+}
