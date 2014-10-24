@@ -47,9 +47,9 @@
 }
 .scatterplot .container {
   position: absolute;
-  top: 0;
+  top: 12px;
   left: 0;
-  right: 0;
+  right: 12px;
   bottom: 0;
   margin: 0;
   padding: 0;
