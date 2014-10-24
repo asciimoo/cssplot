@@ -11,6 +11,9 @@ Simple, css-only plotting.
  * Responsive
 
 
+Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo
+
+
 ### Examples
 
 #### bar chart
