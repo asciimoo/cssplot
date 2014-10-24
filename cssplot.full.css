@@ -8,8 +8,11 @@
   margin: 0;
 }
 .bar-chart .container {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
   position: absolute;
   text-align: center;
@@ -23,7 +26,9 @@
 }
 .bar-chart .chart-column,
 .bar-chart [data-cp-size] {
+  -webkit-flex-grow: 1;
   flex-grow: 1;
+  -webkit-align-self: flex-end;
   align-self: flex-end;
 }
 .bar-chart .chart-column,
