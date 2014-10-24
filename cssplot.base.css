@@ -31,9 +31,9 @@
 .bar-chart [data-cp-size],
 .vertical-chart [data-cp-size] {
   background: #3498db;
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 .vertical-chart {
