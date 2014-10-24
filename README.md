@@ -78,5 +78,8 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
  * Pie chart
  * Stacked bar chart
+ * Line chart
+ * Axis/scale support
  * Documentation
  * Live demo
+ * Better build script
