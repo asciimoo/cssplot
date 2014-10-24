@@ -1,0 +1,32 @@
+.group-by-gender .male {
+  background: #3498db;
+  color: #ffffff;
+}
+.group-by-gender .female {
+  background: #ff6699;
+  color: #ffffff;
+}
+.group-by-number [data-group="0"] {
+  background: #3498db;
+  color: #ffffff;
+}
+.group-by-number [data-group="1"] {
+  background: #ff6699;
+  color: #ffffff;
+}
+.group-by-number [data-group="2"] {
+  background: #93b881;
+  color: #ffffff;
+}
+.group-by-number [data-group="3"] {
+  background: #e09e87;
+  color: #ffffff;
+}
+.group-by-number [data-group="4"] {
+  background: #a22041;
+  color: #ffffff;
+}
+.group-by-number [data-group="5"] {
+  background: #95879c;
+  color: #ffffff;
+}
