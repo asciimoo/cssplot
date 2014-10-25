@@ -1,19 +1,24 @@
 
-all: base full group
+all: prepare base full group
+
+prepare:
+	@rm -rf build/
+	@mkdir build/
+	@echo "[!] build/ directory created"
 
 base:
-	@lessc cssplot.base.less > cssplot.base.css
+	@lessc src/cssplot.base.less > build/cssplot.base.css
 	@echo "[!] cssplot.base.css generated"
 
 full:
-	@lessc cssplot.full.less > cssplot.full.css
+	@lessc src/cssplot.full.less > build/cssplot.full.css
 	@echo "[!] cssplot.full.css generated"
 
 group:
-	@lessc cssplot.group.less > cssplot.group.css
+	@lessc src/cssplot.group.less > build/cssplot.group.css
 	@echo "[!] cssplot.group.css generated"
 
 clean:
-	@rm -rf *.css
+	@rm -rf src/*.css
 
-.PHONY: all base full clean
+.PHONY: all prepare base full clean
