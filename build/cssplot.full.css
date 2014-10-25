@@ -1,6 +1,6 @@
 .bar-chart,
 .vertical-chart,
-.scatterplot {
+.scatter-plot {
   position: relative;
   min-width: 100px;
   min-height: 100px;
@@ -8,8 +8,11 @@
   margin: 0;
 }
 .bar-chart .container {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap;
   position: absolute;
   text-align: center;
@@ -23,7 +26,9 @@
 }
 .bar-chart .chart-column,
 .bar-chart [data-cp-size] {
+  -webkit-flex-grow: 1;
   flex-grow: 1;
+  -webkit-align-self: flex-end;
   align-self: flex-end;
 }
 .bar-chart .chart-column,
@@ -45,7 +50,7 @@
   margin: 0;
   width: 100%;
 }
-.scatterplot .container {
+.scatter-plot .container {
   position: absolute;
   top: 12px;
   left: 0;
@@ -54,10 +59,10 @@
   margin: 0;
   padding: 0;
 }
-.scatterplot .chart-dot,
-.scatterplot .chart-dot,
-.scatterplot [data-cp-x],
-.scatterplot [data-cp-y] {
+.scatter-plot .chart-dot,
+.scatter-plot .chart-dot,
+.scatter-plot [data-cp-x],
+.scatter-plot [data-cp-y] {
   position: absolute;
   height: 0;
   width: 0;
@@ -672,609 +677,609 @@
 .vertical-chart .container [data-cp-size="100"] {
   width: 100%;
 }
-.scatterplot .container [data-cp-x="0"] {
+.scatter-plot .container [data-cp-x="0"] {
   left: 0%;
 }
-.scatterplot .container [data-cp-x="1"] {
+.scatter-plot .container [data-cp-x="1"] {
   left: 1%;
 }
-.scatterplot .container [data-cp-x="2"] {
+.scatter-plot .container [data-cp-x="2"] {
   left: 2%;
 }
-.scatterplot .container [data-cp-x="3"] {
+.scatter-plot .container [data-cp-x="3"] {
   left: 3%;
 }
-.scatterplot .container [data-cp-x="4"] {
+.scatter-plot .container [data-cp-x="4"] {
   left: 4%;
 }
-.scatterplot .container [data-cp-x="5"] {
+.scatter-plot .container [data-cp-x="5"] {
   left: 5%;
 }
-.scatterplot .container [data-cp-x="6"] {
+.scatter-plot .container [data-cp-x="6"] {
   left: 6%;
 }
-.scatterplot .container [data-cp-x="7"] {
+.scatter-plot .container [data-cp-x="7"] {
   left: 7%;
 }
-.scatterplot .container [data-cp-x="8"] {
+.scatter-plot .container [data-cp-x="8"] {
   left: 8%;
 }
-.scatterplot .container [data-cp-x="9"] {
+.scatter-plot .container [data-cp-x="9"] {
   left: 9%;
 }
-.scatterplot .container [data-cp-x="10"] {
+.scatter-plot .container [data-cp-x="10"] {
   left: 10%;
 }
-.scatterplot .container [data-cp-x="11"] {
+.scatter-plot .container [data-cp-x="11"] {
   left: 11%;
 }
-.scatterplot .container [data-cp-x="12"] {
+.scatter-plot .container [data-cp-x="12"] {
   left: 12%;
 }
-.scatterplot .container [data-cp-x="13"] {
+.scatter-plot .container [data-cp-x="13"] {
   left: 13%;
 }
-.scatterplot .container [data-cp-x="14"] {
+.scatter-plot .container [data-cp-x="14"] {
   left: 14%;
 }
-.scatterplot .container [data-cp-x="15"] {
+.scatter-plot .container [data-cp-x="15"] {
   left: 15%;
 }
-.scatterplot .container [data-cp-x="16"] {
+.scatter-plot .container [data-cp-x="16"] {
   left: 16%;
 }
-.scatterplot .container [data-cp-x="17"] {
+.scatter-plot .container [data-cp-x="17"] {
   left: 17%;
 }
-.scatterplot .container [data-cp-x="18"] {
+.scatter-plot .container [data-cp-x="18"] {
   left: 18%;
 }
-.scatterplot .container [data-cp-x="19"] {
+.scatter-plot .container [data-cp-x="19"] {
   left: 19%;
 }
-.scatterplot .container [data-cp-x="20"] {
+.scatter-plot .container [data-cp-x="20"] {
   left: 20%;
 }
-.scatterplot .container [data-cp-x="21"] {
+.scatter-plot .container [data-cp-x="21"] {
   left: 21%;
 }
-.scatterplot .container [data-cp-x="22"] {
+.scatter-plot .container [data-cp-x="22"] {
   left: 22%;
 }
-.scatterplot .container [data-cp-x="23"] {
+.scatter-plot .container [data-cp-x="23"] {
   left: 23%;
 }
-.scatterplot .container [data-cp-x="24"] {
+.scatter-plot .container [data-cp-x="24"] {
   left: 24%;
 }
-.scatterplot .container [data-cp-x="25"] {
+.scatter-plot .container [data-cp-x="25"] {
   left: 25%;
 }
-.scatterplot .container [data-cp-x="26"] {
+.scatter-plot .container [data-cp-x="26"] {
   left: 26%;
 }
-.scatterplot .container [data-cp-x="27"] {
+.scatter-plot .container [data-cp-x="27"] {
   left: 27%;
 }
-.scatterplot .container [data-cp-x="28"] {
+.scatter-plot .container [data-cp-x="28"] {
   left: 28%;
 }
-.scatterplot .container [data-cp-x="29"] {
+.scatter-plot .container [data-cp-x="29"] {
   left: 29%;
 }
-.scatterplot .container [data-cp-x="30"] {
+.scatter-plot .container [data-cp-x="30"] {
   left: 30%;
 }
-.scatterplot .container [data-cp-x="31"] {
+.scatter-plot .container [data-cp-x="31"] {
   left: 31%;
 }
-.scatterplot .container [data-cp-x="32"] {
+.scatter-plot .container [data-cp-x="32"] {
   left: 32%;
 }
-.scatterplot .container [data-cp-x="33"] {
+.scatter-plot .container [data-cp-x="33"] {
   left: 33%;
 }
-.scatterplot .container [data-cp-x="34"] {
+.scatter-plot .container [data-cp-x="34"] {
   left: 34%;
 }
-.scatterplot .container [data-cp-x="35"] {
+.scatter-plot .container [data-cp-x="35"] {
   left: 35%;
 }
-.scatterplot .container [data-cp-x="36"] {
+.scatter-plot .container [data-cp-x="36"] {
   left: 36%;
 }
-.scatterplot .container [data-cp-x="37"] {
+.scatter-plot .container [data-cp-x="37"] {
   left: 37%;
 }
-.scatterplot .container [data-cp-x="38"] {
+.scatter-plot .container [data-cp-x="38"] {
   left: 38%;
 }
-.scatterplot .container [data-cp-x="39"] {
+.scatter-plot .container [data-cp-x="39"] {
   left: 39%;
 }
-.scatterplot .container [data-cp-x="40"] {
+.scatter-plot .container [data-cp-x="40"] {
   left: 40%;
 }
-.scatterplot .container [data-cp-x="41"] {
+.scatter-plot .container [data-cp-x="41"] {
   left: 41%;
 }
-.scatterplot .container [data-cp-x="42"] {
+.scatter-plot .container [data-cp-x="42"] {
   left: 42%;
 }
-.scatterplot .container [data-cp-x="43"] {
+.scatter-plot .container [data-cp-x="43"] {
   left: 43%;
 }
-.scatterplot .container [data-cp-x="44"] {
+.scatter-plot .container [data-cp-x="44"] {
   left: 44%;
 }
-.scatterplot .container [data-cp-x="45"] {
+.scatter-plot .container [data-cp-x="45"] {
   left: 45%;
 }
-.scatterplot .container [data-cp-x="46"] {
+.scatter-plot .container [data-cp-x="46"] {
   left: 46%;
 }
-.scatterplot .container [data-cp-x="47"] {
+.scatter-plot .container [data-cp-x="47"] {
   left: 47%;
 }
-.scatterplot .container [data-cp-x="48"] {
+.scatter-plot .container [data-cp-x="48"] {
   left: 48%;
 }
-.scatterplot .container [data-cp-x="49"] {
+.scatter-plot .container [data-cp-x="49"] {
   left: 49%;
 }
-.scatterplot .container [data-cp-x="50"] {
+.scatter-plot .container [data-cp-x="50"] {
   left: 50%;
 }
-.scatterplot .container [data-cp-x="51"] {
+.scatter-plot .container [data-cp-x="51"] {
   left: 51%;
 }
-.scatterplot .container [data-cp-x="52"] {
+.scatter-plot .container [data-cp-x="52"] {
   left: 52%;
 }
-.scatterplot .container [data-cp-x="53"] {
+.scatter-plot .container [data-cp-x="53"] {
   left: 53%;
 }
-.scatterplot .container [data-cp-x="54"] {
+.scatter-plot .container [data-cp-x="54"] {
   left: 54%;
 }
-.scatterplot .container [data-cp-x="55"] {
+.scatter-plot .container [data-cp-x="55"] {
   left: 55%;
 }
-.scatterplot .container [data-cp-x="56"] {
+.scatter-plot .container [data-cp-x="56"] {
   left: 56%;
 }
-.scatterplot .container [data-cp-x="57"] {
+.scatter-plot .container [data-cp-x="57"] {
   left: 57%;
 }
-.scatterplot .container [data-cp-x="58"] {
+.scatter-plot .container [data-cp-x="58"] {
   left: 58%;
 }
-.scatterplot .container [data-cp-x="59"] {
+.scatter-plot .container [data-cp-x="59"] {
   left: 59%;
 }
-.scatterplot .container [data-cp-x="60"] {
+.scatter-plot .container [data-cp-x="60"] {
   left: 60%;
 }
-.scatterplot .container [data-cp-x="61"] {
+.scatter-plot .container [data-cp-x="61"] {
   left: 61%;
 }
-.scatterplot .container [data-cp-x="62"] {
+.scatter-plot .container [data-cp-x="62"] {
   left: 62%;
 }
-.scatterplot .container [data-cp-x="63"] {
+.scatter-plot .container [data-cp-x="63"] {
   left: 63%;
 }
-.scatterplot .container [data-cp-x="64"] {
+.scatter-plot .container [data-cp-x="64"] {
   left: 64%;
 }
-.scatterplot .container [data-cp-x="65"] {
+.scatter-plot .container [data-cp-x="65"] {
   left: 65%;
 }
-.scatterplot .container [data-cp-x="66"] {
+.scatter-plot .container [data-cp-x="66"] {
   left: 66%;
 }
-.scatterplot .container [data-cp-x="67"] {
+.scatter-plot .container [data-cp-x="67"] {
   left: 67%;
 }
-.scatterplot .container [data-cp-x="68"] {
+.scatter-plot .container [data-cp-x="68"] {
   left: 68%;
 }
-.scatterplot .container [data-cp-x="69"] {
+.scatter-plot .container [data-cp-x="69"] {
   left: 69%;
 }
-.scatterplot .container [data-cp-x="70"] {
+.scatter-plot .container [data-cp-x="70"] {
   left: 70%;
 }
-.scatterplot .container [data-cp-x="71"] {
+.scatter-plot .container [data-cp-x="71"] {
   left: 71%;
 }
-.scatterplot .container [data-cp-x="72"] {
+.scatter-plot .container [data-cp-x="72"] {
   left: 72%;
 }
-.scatterplot .container [data-cp-x="73"] {
+.scatter-plot .container [data-cp-x="73"] {
   left: 73%;
 }
-.scatterplot .container [data-cp-x="74"] {
+.scatter-plot .container [data-cp-x="74"] {
   left: 74%;
 }
-.scatterplot .container [data-cp-x="75"] {
+.scatter-plot .container [data-cp-x="75"] {
   left: 75%;
 }
-.scatterplot .container [data-cp-x="76"] {
+.scatter-plot .container [data-cp-x="76"] {
   left: 76%;
 }
-.scatterplot .container [data-cp-x="77"] {
+.scatter-plot .container [data-cp-x="77"] {
   left: 77%;
 }
-.scatterplot .container [data-cp-x="78"] {
+.scatter-plot .container [data-cp-x="78"] {
   left: 78%;
 }
-.scatterplot .container [data-cp-x="79"] {
+.scatter-plot .container [data-cp-x="79"] {
   left: 79%;
 }
-.scatterplot .container [data-cp-x="80"] {
+.scatter-plot .container [data-cp-x="80"] {
   left: 80%;
 }
-.scatterplot .container [data-cp-x="81"] {
+.scatter-plot .container [data-cp-x="81"] {
   left: 81%;
 }
-.scatterplot .container [data-cp-x="82"] {
+.scatter-plot .container [data-cp-x="82"] {
   left: 82%;
 }
-.scatterplot .container [data-cp-x="83"] {
+.scatter-plot .container [data-cp-x="83"] {
   left: 83%;
 }
-.scatterplot .container [data-cp-x="84"] {
+.scatter-plot .container [data-cp-x="84"] {
   left: 84%;
 }
-.scatterplot .container [data-cp-x="85"] {
+.scatter-plot .container [data-cp-x="85"] {
   left: 85%;
 }
-.scatterplot .container [data-cp-x="86"] {
+.scatter-plot .container [data-cp-x="86"] {
   left: 86%;
 }
-.scatterplot .container [data-cp-x="87"] {
+.scatter-plot .container [data-cp-x="87"] {
   left: 87%;
 }
-.scatterplot .container [data-cp-x="88"] {
+.scatter-plot .container [data-cp-x="88"] {
   left: 88%;
 }
-.scatterplot .container [data-cp-x="89"] {
+.scatter-plot .container [data-cp-x="89"] {
   left: 89%;
 }
-.scatterplot .container [data-cp-x="90"] {
+.scatter-plot .container [data-cp-x="90"] {
   left: 90%;
 }
-.scatterplot .container [data-cp-x="91"] {
+.scatter-plot .container [data-cp-x="91"] {
   left: 91%;
 }
-.scatterplot .container [data-cp-x="92"] {
+.scatter-plot .container [data-cp-x="92"] {
   left: 92%;
 }
-.scatterplot .container [data-cp-x="93"] {
+.scatter-plot .container [data-cp-x="93"] {
   left: 93%;
 }
-.scatterplot .container [data-cp-x="94"] {
+.scatter-plot .container [data-cp-x="94"] {
   left: 94%;
 }
-.scatterplot .container [data-cp-x="95"] {
+.scatter-plot .container [data-cp-x="95"] {
   left: 95%;
 }
-.scatterplot .container [data-cp-x="96"] {
+.scatter-plot .container [data-cp-x="96"] {
   left: 96%;
 }
-.scatterplot .container [data-cp-x="97"] {
+.scatter-plot .container [data-cp-x="97"] {
   left: 97%;
 }
-.scatterplot .container [data-cp-x="98"] {
+.scatter-plot .container [data-cp-x="98"] {
   left: 98%;
 }
-.scatterplot .container [data-cp-x="99"] {
+.scatter-plot .container [data-cp-x="99"] {
   left: 99%;
 }
-.scatterplot .container [data-cp-x="100"] {
+.scatter-plot .container [data-cp-x="100"] {
   left: 100%;
 }
-.scatterplot .container [data-cp-y="0"] {
+.scatter-plot .container [data-cp-y="0"] {
   bottom: 0%;
 }
-.scatterplot .container [data-cp-y="1"] {
+.scatter-plot .container [data-cp-y="1"] {
   bottom: 1%;
 }
-.scatterplot .container [data-cp-y="2"] {
+.scatter-plot .container [data-cp-y="2"] {
   bottom: 2%;
 }
-.scatterplot .container [data-cp-y="3"] {
+.scatter-plot .container [data-cp-y="3"] {
   bottom: 3%;
 }
-.scatterplot .container [data-cp-y="4"] {
+.scatter-plot .container [data-cp-y="4"] {
   bottom: 4%;
 }
-.scatterplot .container [data-cp-y="5"] {
+.scatter-plot .container [data-cp-y="5"] {
   bottom: 5%;
 }
-.scatterplot .container [data-cp-y="6"] {
+.scatter-plot .container [data-cp-y="6"] {
   bottom: 6%;
 }
-.scatterplot .container [data-cp-y="7"] {
+.scatter-plot .container [data-cp-y="7"] {
   bottom: 7%;
 }
-.scatterplot .container [data-cp-y="8"] {
+.scatter-plot .container [data-cp-y="8"] {
   bottom: 8%;
 }
-.scatterplot .container [data-cp-y="9"] {
+.scatter-plot .container [data-cp-y="9"] {
   bottom: 9%;
 }
-.scatterplot .container [data-cp-y="10"] {
+.scatter-plot .container [data-cp-y="10"] {
   bottom: 10%;
 }
-.scatterplot .container [data-cp-y="11"] {
+.scatter-plot .container [data-cp-y="11"] {
   bottom: 11%;
 }
-.scatterplot .container [data-cp-y="12"] {
+.scatter-plot .container [data-cp-y="12"] {
   bottom: 12%;
 }
-.scatterplot .container [data-cp-y="13"] {
+.scatter-plot .container [data-cp-y="13"] {
   bottom: 13%;
 }
-.scatterplot .container [data-cp-y="14"] {
+.scatter-plot .container [data-cp-y="14"] {
   bottom: 14%;
 }
-.scatterplot .container [data-cp-y="15"] {
+.scatter-plot .container [data-cp-y="15"] {
   bottom: 15%;
 }
-.scatterplot .container [data-cp-y="16"] {
+.scatter-plot .container [data-cp-y="16"] {
   bottom: 16%;
 }
-.scatterplot .container [data-cp-y="17"] {
+.scatter-plot .container [data-cp-y="17"] {
   bottom: 17%;
 }
-.scatterplot .container [data-cp-y="18"] {
+.scatter-plot .container [data-cp-y="18"] {
   bottom: 18%;
 }
-.scatterplot .container [data-cp-y="19"] {
+.scatter-plot .container [data-cp-y="19"] {
   bottom: 19%;
 }
-.scatterplot .container [data-cp-y="20"] {
+.scatter-plot .container [data-cp-y="20"] {
   bottom: 20%;
 }
-.scatterplot .container [data-cp-y="21"] {
+.scatter-plot .container [data-cp-y="21"] {
   bottom: 21%;
 }
-.scatterplot .container [data-cp-y="22"] {
+.scatter-plot .container [data-cp-y="22"] {
   bottom: 22%;
 }
-.scatterplot .container [data-cp-y="23"] {
+.scatter-plot .container [data-cp-y="23"] {
   bottom: 23%;
 }
-.scatterplot .container [data-cp-y="24"] {
+.scatter-plot .container [data-cp-y="24"] {
   bottom: 24%;
 }
-.scatterplot .container [data-cp-y="25"] {
+.scatter-plot .container [data-cp-y="25"] {
   bottom: 25%;
 }
-.scatterplot .container [data-cp-y="26"] {
+.scatter-plot .container [data-cp-y="26"] {
   bottom: 26%;
 }
-.scatterplot .container [data-cp-y="27"] {
+.scatter-plot .container [data-cp-y="27"] {
   bottom: 27%;
 }
-.scatterplot .container [data-cp-y="28"] {
+.scatter-plot .container [data-cp-y="28"] {
   bottom: 28%;
 }
-.scatterplot .container [data-cp-y="29"] {
+.scatter-plot .container [data-cp-y="29"] {
   bottom: 29%;
 }
-.scatterplot .container [data-cp-y="30"] {
+.scatter-plot .container [data-cp-y="30"] {
   bottom: 30%;
 }
-.scatterplot .container [data-cp-y="31"] {
+.scatter-plot .container [data-cp-y="31"] {
   bottom: 31%;
 }
-.scatterplot .container [data-cp-y="32"] {
+.scatter-plot .container [data-cp-y="32"] {
   bottom: 32%;
 }
-.scatterplot .container [data-cp-y="33"] {
+.scatter-plot .container [data-cp-y="33"] {
   bottom: 33%;
 }
-.scatterplot .container [data-cp-y="34"] {
+.scatter-plot .container [data-cp-y="34"] {
   bottom: 34%;
 }
-.scatterplot .container [data-cp-y="35"] {
+.scatter-plot .container [data-cp-y="35"] {
   bottom: 35%;
 }
-.scatterplot .container [data-cp-y="36"] {
+.scatter-plot .container [data-cp-y="36"] {
   bottom: 36%;
 }
-.scatterplot .container [data-cp-y="37"] {
+.scatter-plot .container [data-cp-y="37"] {
   bottom: 37%;
 }
-.scatterplot .container [data-cp-y="38"] {
+.scatter-plot .container [data-cp-y="38"] {
   bottom: 38%;
 }
-.scatterplot .container [data-cp-y="39"] {
+.scatter-plot .container [data-cp-y="39"] {
   bottom: 39%;
 }
-.scatterplot .container [data-cp-y="40"] {
+.scatter-plot .container [data-cp-y="40"] {
   bottom: 40%;
 }
-.scatterplot .container [data-cp-y="41"] {
+.scatter-plot .container [data-cp-y="41"] {
   bottom: 41%;
 }
-.scatterplot .container [data-cp-y="42"] {
+.scatter-plot .container [data-cp-y="42"] {
   bottom: 42%;
 }
-.scatterplot .container [data-cp-y="43"] {
+.scatter-plot .container [data-cp-y="43"] {
   bottom: 43%;
 }
-.scatterplot .container [data-cp-y="44"] {
+.scatter-plot .container [data-cp-y="44"] {
   bottom: 44%;
 }
-.scatterplot .container [data-cp-y="45"] {
+.scatter-plot .container [data-cp-y="45"] {
   bottom: 45%;
 }
-.scatterplot .container [data-cp-y="46"] {
+.scatter-plot .container [data-cp-y="46"] {
   bottom: 46%;
 }
-.scatterplot .container [data-cp-y="47"] {
+.scatter-plot .container [data-cp-y="47"] {
   bottom: 47%;
 }
-.scatterplot .container [data-cp-y="48"] {
+.scatter-plot .container [data-cp-y="48"] {
   bottom: 48%;
 }
-.scatterplot .container [data-cp-y="49"] {
+.scatter-plot .container [data-cp-y="49"] {
   bottom: 49%;
 }
-.scatterplot .container [data-cp-y="50"] {
+.scatter-plot .container [data-cp-y="50"] {
   bottom: 50%;
 }
-.scatterplot .container [data-cp-y="51"] {
+.scatter-plot .container [data-cp-y="51"] {
   bottom: 51%;
 }
-.scatterplot .container [data-cp-y="52"] {
+.scatter-plot .container [data-cp-y="52"] {
   bottom: 52%;
 }
-.scatterplot .container [data-cp-y="53"] {
+.scatter-plot .container [data-cp-y="53"] {
   bottom: 53%;
 }
-.scatterplot .container [data-cp-y="54"] {
+.scatter-plot .container [data-cp-y="54"] {
   bottom: 54%;
 }
-.scatterplot .container [data-cp-y="55"] {
+.scatter-plot .container [data-cp-y="55"] {
   bottom: 55%;
 }
-.scatterplot .container [data-cp-y="56"] {
+.scatter-plot .container [data-cp-y="56"] {
   bottom: 56%;
 }
-.scatterplot .container [data-cp-y="57"] {
+.scatter-plot .container [data-cp-y="57"] {
   bottom: 57%;
 }
-.scatterplot .container [data-cp-y="58"] {
+.scatter-plot .container [data-cp-y="58"] {
   bottom: 58%;
 }
-.scatterplot .container [data-cp-y="59"] {
+.scatter-plot .container [data-cp-y="59"] {
   bottom: 59%;
 }
-.scatterplot .container [data-cp-y="60"] {
+.scatter-plot .container [data-cp-y="60"] {
   bottom: 60%;
 }
-.scatterplot .container [data-cp-y="61"] {
+.scatter-plot .container [data-cp-y="61"] {
   bottom: 61%;
 }
-.scatterplot .container [data-cp-y="62"] {
+.scatter-plot .container [data-cp-y="62"] {
   bottom: 62%;
 }
-.scatterplot .container [data-cp-y="63"] {
+.scatter-plot .container [data-cp-y="63"] {
   bottom: 63%;
 }
-.scatterplot .container [data-cp-y="64"] {
+.scatter-plot .container [data-cp-y="64"] {
   bottom: 64%;
 }
-.scatterplot .container [data-cp-y="65"] {
+.scatter-plot .container [data-cp-y="65"] {
   bottom: 65%;
 }
-.scatterplot .container [data-cp-y="66"] {
+.scatter-plot .container [data-cp-y="66"] {
   bottom: 66%;
 }
-.scatterplot .container [data-cp-y="67"] {
+.scatter-plot .container [data-cp-y="67"] {
   bottom: 67%;
 }
-.scatterplot .container [data-cp-y="68"] {
+.scatter-plot .container [data-cp-y="68"] {
   bottom: 68%;
 }
-.scatterplot .container [data-cp-y="69"] {
+.scatter-plot .container [data-cp-y="69"] {
   bottom: 69%;
 }
-.scatterplot .container [data-cp-y="70"] {
+.scatter-plot .container [data-cp-y="70"] {
   bottom: 70%;
 }
-.scatterplot .container [data-cp-y="71"] {
+.scatter-plot .container [data-cp-y="71"] {
   bottom: 71%;
 }
-.scatterplot .container [data-cp-y="72"] {
+.scatter-plot .container [data-cp-y="72"] {
   bottom: 72%;
 }
-.scatterplot .container [data-cp-y="73"] {
+.scatter-plot .container [data-cp-y="73"] {
   bottom: 73%;
 }
-.scatterplot .container [data-cp-y="74"] {
+.scatter-plot .container [data-cp-y="74"] {
   bottom: 74%;
 }
-.scatterplot .container [data-cp-y="75"] {
+.scatter-plot .container [data-cp-y="75"] {
   bottom: 75%;
 }
-.scatterplot .container [data-cp-y="76"] {
+.scatter-plot .container [data-cp-y="76"] {
   bottom: 76%;
 }
-.scatterplot .container [data-cp-y="77"] {
+.scatter-plot .container [data-cp-y="77"] {
   bottom: 77%;
 }
-.scatterplot .container [data-cp-y="78"] {
+.scatter-plot .container [data-cp-y="78"] {
   bottom: 78%;
 }
-.scatterplot .container [data-cp-y="79"] {
+.scatter-plot .container [data-cp-y="79"] {
   bottom: 79%;
 }
-.scatterplot .container [data-cp-y="80"] {
+.scatter-plot .container [data-cp-y="80"] {
   bottom: 80%;
 }
-.scatterplot .container [data-cp-y="81"] {
+.scatter-plot .container [data-cp-y="81"] {
   bottom: 81%;
 }
-.scatterplot .container [data-cp-y="82"] {
+.scatter-plot .container [data-cp-y="82"] {
   bottom: 82%;
 }
-.scatterplot .container [data-cp-y="83"] {
+.scatter-plot .container [data-cp-y="83"] {
   bottom: 83%;
 }
-.scatterplot .container [data-cp-y="84"] {
+.scatter-plot .container [data-cp-y="84"] {
   bottom: 84%;
 }
-.scatterplot .container [data-cp-y="85"] {
+.scatter-plot .container [data-cp-y="85"] {
   bottom: 85%;
 }
-.scatterplot .container [data-cp-y="86"] {
+.scatter-plot .container [data-cp-y="86"] {
   bottom: 86%;
 }
-.scatterplot .container [data-cp-y="87"] {
+.scatter-plot .container [data-cp-y="87"] {
   bottom: 87%;
 }
-.scatterplot .container [data-cp-y="88"] {
+.scatter-plot .container [data-cp-y="88"] {
   bottom: 88%;
 }
-.scatterplot .container [data-cp-y="89"] {
+.scatter-plot .container [data-cp-y="89"] {
   bottom: 89%;
 }
-.scatterplot .container [data-cp-y="90"] {
+.scatter-plot .container [data-cp-y="90"] {
   bottom: 90%;
 }
-.scatterplot .container [data-cp-y="91"] {
+.scatter-plot .container [data-cp-y="91"] {
   bottom: 91%;
 }
-.scatterplot .container [data-cp-y="92"] {
+.scatter-plot .container [data-cp-y="92"] {
   bottom: 92%;
 }
-.scatterplot .container [data-cp-y="93"] {
+.scatter-plot .container [data-cp-y="93"] {
   bottom: 93%;
 }
-.scatterplot .container [data-cp-y="94"] {
+.scatter-plot .container [data-cp-y="94"] {
   bottom: 94%;
 }
-.scatterplot .container [data-cp-y="95"] {
+.scatter-plot .container [data-cp-y="95"] {
   bottom: 95%;
 }
-.scatterplot .container [data-cp-y="96"] {
+.scatter-plot .container [data-cp-y="96"] {
   bottom: 96%;
 }
-.scatterplot .container [data-cp-y="97"] {
+.scatter-plot .container [data-cp-y="97"] {
   bottom: 97%;
 }
-.scatterplot .container [data-cp-y="98"] {
+.scatter-plot .container [data-cp-y="98"] {
   bottom: 98%;
 }
-.scatterplot .container [data-cp-y="99"] {
+.scatter-plot .container [data-cp-y="99"] {
   bottom: 99%;
 }
-.scatterplot .container [data-cp-y="100"] {
+.scatter-plot .container [data-cp-y="100"] {
   bottom: 100%;
 }

@@ -1,4 +1,4 @@
-.bar-chart, .vertical-chart, .scatterplot {
+.bar-chart, .vertical-chart, .scatter-plot {
     position: relative;
     min-width: 100px;
     min-height: 100px;
@@ -7,8 +7,11 @@
 }
 
 .bar-chart .container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
     position: absolute;
     text-align: center;
@@ -20,7 +23,9 @@
 
 .bar-chart .chart-column,
 .bar-chart [data-cp-size] {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
+    -webkit-align-self: flex-end;
     align-self: flex-end;
 }
 
@@ -46,24 +51,24 @@
     width: 100%;
 }
 
-.scatterplot .container {
+.scatter-plot .container {
     position: absolute;
-    top: e(%("%dpx", @scatterplot-dot-size * 2));
+    top: e(%("%dpx", @scatter-plot-dot-size * 2));
     left: 0;
-    right: e(%("%dpx", @scatterplot-dot-size * 2));
+    right: e(%("%dpx", @scatter-plot-dot-size * 2));
     bottom: 0;
     margin: 0; padding: 0;
 }
 
-.scatterplot .chart-dot,
-.scatterplot .chart-dot,
-.scatterplot [data-cp-x],
-.scatterplot [data-cp-y] {
+.scatter-plot .chart-dot,
+.scatter-plot .chart-dot,
+.scatter-plot [data-cp-x],
+.scatter-plot [data-cp-y] {
     position: absolute;
     height: 0;
     width: 0;
     list-style: none;
     overflow: hidden;
-    border: e(%("%dpx", @scatterplot-dot-size)) solid @chart-primary-color;
+    border: e(%("%dpx", @scatter-plot-dot-size)) solid @chart-primary-color;
     border-radius: 100%;
 }
