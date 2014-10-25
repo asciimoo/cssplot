@@ -1,6 +1,6 @@
 .bar-chart,
 .vertical-chart,
-.scatterplot {
+.scatter-plot {
   position: relative;
   min-width: 100px;
   min-height: 100px;
@@ -50,7 +50,7 @@
   margin: 0;
   width: 100%;
 }
-.scatterplot .container {
+.scatter-plot .container {
   position: absolute;
   top: 12px;
   left: 0;
@@ -59,10 +59,10 @@
   margin: 0;
   padding: 0;
 }
-.scatterplot .chart-dot,
-.scatterplot .chart-dot,
-.scatterplot [data-cp-x],
-.scatterplot [data-cp-y] {
+.scatter-plot .chart-dot,
+.scatter-plot .chart-dot,
+.scatter-plot [data-cp-x],
+.scatter-plot [data-cp-y] {
   position: absolute;
   height: 0;
   width: 0;
