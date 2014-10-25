@@ -3,20 +3,17 @@ cssplot
 
 Simple, css-only plotting.
 
-
-### Features
+## Features
 
  * No javascript required
  * Easy-to-use
  * Responsive
 
+Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo.
 
-Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo
+## Examples
 
-
-### Examples
-
-#### bar chart
+### Bar chart
 
 ```html
 <div class="bar-chart">
@@ -32,10 +29,12 @@ Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo
     </ul>
 </div>
 ```
-![bar chart](docs/images/cssplot_bar_chart.png)
 
+<div align="center">
+  <img src="docs/images/cssplot_bar_chart.png"/>
+</div>
 
-#### vertical chart
+### Vertical chart
 
 ```html
 <div class="vertical-chart">
@@ -48,13 +47,15 @@ Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo
     </ul>
 </div>
 ```
-![bar chart](docs/images/cssplot_vertical_chart.png)
 
+<div align="center">
+  <img src="docs/images/cssplot_vertical_chart.png"/>
+</div>
 
-#### scatterplot
+### Scatter plot
 
 ```html
-<div class="scatterplot">
+<div class="scatter-plot">
     <ul class="container">
         <li data-cp-x="50" data-cp-y="30">a</li>
         <li data-cp-x="30" data-cp-y="20">b</li>
@@ -67,8 +68,12 @@ Check [asciimoo.github.io/cssplot](https://asciimoo.github.io/cssplot) for demo
     </ul>
 </div>
 ```
-![scatterplot](docs/images/cssplot_scatterplot.png)
 
+<div align="center">
+  <img src="docs/images/cssplot_scatter_plot.png"/>
+</div>
+
+## Usage
 
 Alternatively `cssplot.base.css` can be used alone with the following modifications:
 
@@ -76,13 +81,11 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
  * Vertical bar chart: use `class="chart-row" style="width: 99.0%"` instead of `data-cp-size="99"`
  * Scatter plot: use `class="chart-dot" style="left: 20.0%; bottom: 10.0%"` instead of `data-cp-x="20" data-cp-y="10"`
 
+## Conceptions
 
-### TODO
-
- * Pie chart
- * Stacked bar chart
- * Line chart
- * Axis/scale support
- * Documentation
- * Live demo
- * Better build script
+- [ ] Pie chart
+- [ ] Stacked bar chart
+- [ ] Line chart
+- [ ] Axis/scale support
+- [ ] Live demo
+- [ ] Better build script
