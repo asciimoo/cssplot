@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
 }
-.bar-chart .container {
+.bar-chart .plot-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -44,13 +44,13 @@
 .vertical-chart {
   clear: both;
 }
-.vertical-chart .container {
+.vertical-chart .plot-container {
   flex-direction: row;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-.scatter-plot .container {
+.scatter-plot .plot-container {
   position: absolute;
   top: 12px;
   left: 0;
