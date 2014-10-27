@@ -29,7 +29,7 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
 ```html
 <div class="bar-chart">
-    <ul class="container">
+    <ul class="plot-container">
         <li data-cp-size="99">99%</li>
         <li data-cp-size="50">50%</li>
         <li data-cp-size="30">30%</li>
@@ -50,7 +50,7 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
 ```html
 <div class="vertical-chart">
-    <ul class="container">
+    <ul class="plot-container">
         <li data-cp-size="100">100%</li>
         <li data-cp-size="30">30%</li>
         <li data-cp-size="20">20%</li>
@@ -68,7 +68,7 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
 ```html
 <div class="scatter-plot">
-    <ul class="container">
+    <ul class="plot-container">
         <li data-cp-x="50" data-cp-y="30">a</li>
         <li data-cp-x="30" data-cp-y="20">b</li>
         <li data-cp-x="10" data-cp-y="5">c</li>

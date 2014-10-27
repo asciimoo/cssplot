@@ -1,8 +1,7 @@
 
 all: prepare base full group
 
-prepare:
-	@rm -rf build/
+prepare: clean
 	@mkdir build/
 	@echo "[!] build/ directory created"
 
@@ -19,6 +18,6 @@ group:
 	@echo "[!] cssplot.group.css generated"
 
 clean:
-	@rm -rf src/*.css
+	@rm -rf build/
 
 .PHONY: all prepare base full clean
