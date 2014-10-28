@@ -50,6 +50,10 @@
   margin: 0;
   width: 100%;
 }
+.vertical-chart .chart-row,
+.vertical-chart [data-cp-size] {
+  min-height: 1px;
+}
 .scatter-plot .plot-container {
   position: absolute;
   top: 12px;
