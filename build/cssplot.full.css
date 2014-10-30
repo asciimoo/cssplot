@@ -1,5 +1,5 @@
+.column-chart,
 .bar-chart,
-.vertical-chart,
 .scatter-plot {
   position: relative;
   min-width: 100px;
@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
 }
-.bar-chart .plot-container {
+.column-chart .plot-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -24,34 +24,34 @@
   margin: 0;
   min-height: 100px;
 }
-.bar-chart .chart-column,
-.bar-chart [data-cp-size] {
+.column-chart .chart-column,
+.column-chart [data-cp-size] {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-align-self: flex-end;
   align-self: flex-end;
 }
-.bar-chart .chart-column,
-.vertical-chart .chart-row,
-.bar-chart [data-cp-size],
-.vertical-chart [data-cp-size] {
+.column-chart .chart-column,
+.bar-chart .chart-row,
+.column-chart [data-cp-size],
+.bar-chart [data-cp-size] {
   background: #3498db;
   color: #ffffff;
   list-style: none;
   border: 1px solid #ffffff;
   box-sizing: border-box;
 }
-.vertical-chart {
+.bar-chart {
   clear: both;
 }
-.vertical-chart .plot-container {
+.bar-chart .plot-container {
   flex-direction: row;
   padding: 0;
   margin: 0;
   width: 100%;
 }
-.vertical-chart .chart-row,
-.vertical-chart [data-cp-size] {
+.bar-chart .chart-row,
+.bar-chart [data-cp-size] {
   min-height: 1px;
 }
 .scatter-plot .plot-container {
@@ -75,610 +75,610 @@
   border: 6px solid #3498db;
   border-radius: 100%;
 }
-.bar-chart .plot-container [data-cp-size="0"] {
+.column-chart .plot-container [data-cp-size="0"] {
   height: 0%;
 }
-.bar-chart .plot-container [data-cp-size="1"] {
+.column-chart .plot-container [data-cp-size="1"] {
   height: 1%;
 }
-.bar-chart .plot-container [data-cp-size="2"] {
+.column-chart .plot-container [data-cp-size="2"] {
   height: 2%;
 }
-.bar-chart .plot-container [data-cp-size="3"] {
+.column-chart .plot-container [data-cp-size="3"] {
   height: 3%;
 }
-.bar-chart .plot-container [data-cp-size="4"] {
+.column-chart .plot-container [data-cp-size="4"] {
   height: 4%;
 }
-.bar-chart .plot-container [data-cp-size="5"] {
+.column-chart .plot-container [data-cp-size="5"] {
   height: 5%;
 }
-.bar-chart .plot-container [data-cp-size="6"] {
+.column-chart .plot-container [data-cp-size="6"] {
   height: 6%;
 }
-.bar-chart .plot-container [data-cp-size="7"] {
+.column-chart .plot-container [data-cp-size="7"] {
   height: 7%;
 }
-.bar-chart .plot-container [data-cp-size="8"] {
+.column-chart .plot-container [data-cp-size="8"] {
   height: 8%;
 }
-.bar-chart .plot-container [data-cp-size="9"] {
+.column-chart .plot-container [data-cp-size="9"] {
   height: 9%;
 }
-.bar-chart .plot-container [data-cp-size="10"] {
+.column-chart .plot-container [data-cp-size="10"] {
   height: 10%;
 }
-.bar-chart .plot-container [data-cp-size="11"] {
+.column-chart .plot-container [data-cp-size="11"] {
   height: 11%;
 }
-.bar-chart .plot-container [data-cp-size="12"] {
+.column-chart .plot-container [data-cp-size="12"] {
   height: 12%;
 }
-.bar-chart .plot-container [data-cp-size="13"] {
+.column-chart .plot-container [data-cp-size="13"] {
   height: 13%;
 }
-.bar-chart .plot-container [data-cp-size="14"] {
+.column-chart .plot-container [data-cp-size="14"] {
   height: 14%;
 }
-.bar-chart .plot-container [data-cp-size="15"] {
+.column-chart .plot-container [data-cp-size="15"] {
   height: 15%;
 }
-.bar-chart .plot-container [data-cp-size="16"] {
+.column-chart .plot-container [data-cp-size="16"] {
   height: 16%;
 }
-.bar-chart .plot-container [data-cp-size="17"] {
+.column-chart .plot-container [data-cp-size="17"] {
   height: 17%;
 }
-.bar-chart .plot-container [data-cp-size="18"] {
+.column-chart .plot-container [data-cp-size="18"] {
   height: 18%;
 }
-.bar-chart .plot-container [data-cp-size="19"] {
+.column-chart .plot-container [data-cp-size="19"] {
   height: 19%;
 }
-.bar-chart .plot-container [data-cp-size="20"] {
+.column-chart .plot-container [data-cp-size="20"] {
   height: 20%;
 }
-.bar-chart .plot-container [data-cp-size="21"] {
+.column-chart .plot-container [data-cp-size="21"] {
   height: 21%;
 }
-.bar-chart .plot-container [data-cp-size="22"] {
+.column-chart .plot-container [data-cp-size="22"] {
   height: 22%;
 }
-.bar-chart .plot-container [data-cp-size="23"] {
+.column-chart .plot-container [data-cp-size="23"] {
   height: 23%;
 }
-.bar-chart .plot-container [data-cp-size="24"] {
+.column-chart .plot-container [data-cp-size="24"] {
   height: 24%;
 }
-.bar-chart .plot-container [data-cp-size="25"] {
+.column-chart .plot-container [data-cp-size="25"] {
   height: 25%;
 }
-.bar-chart .plot-container [data-cp-size="26"] {
+.column-chart .plot-container [data-cp-size="26"] {
   height: 26%;
 }
-.bar-chart .plot-container [data-cp-size="27"] {
+.column-chart .plot-container [data-cp-size="27"] {
   height: 27%;
 }
-.bar-chart .plot-container [data-cp-size="28"] {
+.column-chart .plot-container [data-cp-size="28"] {
   height: 28%;
 }
-.bar-chart .plot-container [data-cp-size="29"] {
+.column-chart .plot-container [data-cp-size="29"] {
   height: 29%;
 }
-.bar-chart .plot-container [data-cp-size="30"] {
+.column-chart .plot-container [data-cp-size="30"] {
   height: 30%;
 }
-.bar-chart .plot-container [data-cp-size="31"] {
+.column-chart .plot-container [data-cp-size="31"] {
   height: 31%;
 }
-.bar-chart .plot-container [data-cp-size="32"] {
+.column-chart .plot-container [data-cp-size="32"] {
   height: 32%;
 }
-.bar-chart .plot-container [data-cp-size="33"] {
+.column-chart .plot-container [data-cp-size="33"] {
   height: 33%;
 }
-.bar-chart .plot-container [data-cp-size="34"] {
+.column-chart .plot-container [data-cp-size="34"] {
   height: 34%;
 }
-.bar-chart .plot-container [data-cp-size="35"] {
+.column-chart .plot-container [data-cp-size="35"] {
   height: 35%;
 }
-.bar-chart .plot-container [data-cp-size="36"] {
+.column-chart .plot-container [data-cp-size="36"] {
   height: 36%;
 }
-.bar-chart .plot-container [data-cp-size="37"] {
+.column-chart .plot-container [data-cp-size="37"] {
   height: 37%;
 }
-.bar-chart .plot-container [data-cp-size="38"] {
+.column-chart .plot-container [data-cp-size="38"] {
   height: 38%;
 }
-.bar-chart .plot-container [data-cp-size="39"] {
+.column-chart .plot-container [data-cp-size="39"] {
   height: 39%;
 }
-.bar-chart .plot-container [data-cp-size="40"] {
+.column-chart .plot-container [data-cp-size="40"] {
   height: 40%;
 }
-.bar-chart .plot-container [data-cp-size="41"] {
+.column-chart .plot-container [data-cp-size="41"] {
   height: 41%;
 }
-.bar-chart .plot-container [data-cp-size="42"] {
+.column-chart .plot-container [data-cp-size="42"] {
   height: 42%;
 }
-.bar-chart .plot-container [data-cp-size="43"] {
+.column-chart .plot-container [data-cp-size="43"] {
   height: 43%;
 }
-.bar-chart .plot-container [data-cp-size="44"] {
+.column-chart .plot-container [data-cp-size="44"] {
   height: 44%;
 }
-.bar-chart .plot-container [data-cp-size="45"] {
+.column-chart .plot-container [data-cp-size="45"] {
   height: 45%;
 }
-.bar-chart .plot-container [data-cp-size="46"] {
+.column-chart .plot-container [data-cp-size="46"] {
   height: 46%;
 }
-.bar-chart .plot-container [data-cp-size="47"] {
+.column-chart .plot-container [data-cp-size="47"] {
   height: 47%;
 }
-.bar-chart .plot-container [data-cp-size="48"] {
+.column-chart .plot-container [data-cp-size="48"] {
   height: 48%;
 }
-.bar-chart .plot-container [data-cp-size="49"] {
+.column-chart .plot-container [data-cp-size="49"] {
   height: 49%;
 }
-.bar-chart .plot-container [data-cp-size="50"] {
+.column-chart .plot-container [data-cp-size="50"] {
   height: 50%;
 }
-.bar-chart .plot-container [data-cp-size="51"] {
+.column-chart .plot-container [data-cp-size="51"] {
   height: 51%;
 }
-.bar-chart .plot-container [data-cp-size="52"] {
+.column-chart .plot-container [data-cp-size="52"] {
   height: 52%;
 }
-.bar-chart .plot-container [data-cp-size="53"] {
+.column-chart .plot-container [data-cp-size="53"] {
   height: 53%;
 }
-.bar-chart .plot-container [data-cp-size="54"] {
+.column-chart .plot-container [data-cp-size="54"] {
   height: 54%;
 }
-.bar-chart .plot-container [data-cp-size="55"] {
+.column-chart .plot-container [data-cp-size="55"] {
   height: 55%;
 }
-.bar-chart .plot-container [data-cp-size="56"] {
+.column-chart .plot-container [data-cp-size="56"] {
   height: 56%;
 }
-.bar-chart .plot-container [data-cp-size="57"] {
+.column-chart .plot-container [data-cp-size="57"] {
   height: 57%;
 }
-.bar-chart .plot-container [data-cp-size="58"] {
+.column-chart .plot-container [data-cp-size="58"] {
   height: 58%;
 }
-.bar-chart .plot-container [data-cp-size="59"] {
+.column-chart .plot-container [data-cp-size="59"] {
   height: 59%;
 }
-.bar-chart .plot-container [data-cp-size="60"] {
+.column-chart .plot-container [data-cp-size="60"] {
   height: 60%;
 }
-.bar-chart .plot-container [data-cp-size="61"] {
+.column-chart .plot-container [data-cp-size="61"] {
   height: 61%;
 }
-.bar-chart .plot-container [data-cp-size="62"] {
+.column-chart .plot-container [data-cp-size="62"] {
   height: 62%;
 }
-.bar-chart .plot-container [data-cp-size="63"] {
+.column-chart .plot-container [data-cp-size="63"] {
   height: 63%;
 }
-.bar-chart .plot-container [data-cp-size="64"] {
+.column-chart .plot-container [data-cp-size="64"] {
   height: 64%;
 }
-.bar-chart .plot-container [data-cp-size="65"] {
+.column-chart .plot-container [data-cp-size="65"] {
   height: 65%;
 }
-.bar-chart .plot-container [data-cp-size="66"] {
+.column-chart .plot-container [data-cp-size="66"] {
   height: 66%;
 }
-.bar-chart .plot-container [data-cp-size="67"] {
+.column-chart .plot-container [data-cp-size="67"] {
   height: 67%;
 }
-.bar-chart .plot-container [data-cp-size="68"] {
+.column-chart .plot-container [data-cp-size="68"] {
   height: 68%;
 }
-.bar-chart .plot-container [data-cp-size="69"] {
+.column-chart .plot-container [data-cp-size="69"] {
   height: 69%;
 }
-.bar-chart .plot-container [data-cp-size="70"] {
+.column-chart .plot-container [data-cp-size="70"] {
   height: 70%;
 }
-.bar-chart .plot-container [data-cp-size="71"] {
+.column-chart .plot-container [data-cp-size="71"] {
   height: 71%;
 }
-.bar-chart .plot-container [data-cp-size="72"] {
+.column-chart .plot-container [data-cp-size="72"] {
   height: 72%;
 }
-.bar-chart .plot-container [data-cp-size="73"] {
+.column-chart .plot-container [data-cp-size="73"] {
   height: 73%;
 }
-.bar-chart .plot-container [data-cp-size="74"] {
+.column-chart .plot-container [data-cp-size="74"] {
   height: 74%;
 }
-.bar-chart .plot-container [data-cp-size="75"] {
+.column-chart .plot-container [data-cp-size="75"] {
   height: 75%;
 }
-.bar-chart .plot-container [data-cp-size="76"] {
+.column-chart .plot-container [data-cp-size="76"] {
   height: 76%;
 }
-.bar-chart .plot-container [data-cp-size="77"] {
+.column-chart .plot-container [data-cp-size="77"] {
   height: 77%;
 }
-.bar-chart .plot-container [data-cp-size="78"] {
+.column-chart .plot-container [data-cp-size="78"] {
   height: 78%;
 }
-.bar-chart .plot-container [data-cp-size="79"] {
+.column-chart .plot-container [data-cp-size="79"] {
   height: 79%;
 }
-.bar-chart .plot-container [data-cp-size="80"] {
+.column-chart .plot-container [data-cp-size="80"] {
   height: 80%;
 }
-.bar-chart .plot-container [data-cp-size="81"] {
+.column-chart .plot-container [data-cp-size="81"] {
   height: 81%;
 }
-.bar-chart .plot-container [data-cp-size="82"] {
+.column-chart .plot-container [data-cp-size="82"] {
   height: 82%;
 }
-.bar-chart .plot-container [data-cp-size="83"] {
+.column-chart .plot-container [data-cp-size="83"] {
   height: 83%;
 }
-.bar-chart .plot-container [data-cp-size="84"] {
+.column-chart .plot-container [data-cp-size="84"] {
   height: 84%;
 }
-.bar-chart .plot-container [data-cp-size="85"] {
+.column-chart .plot-container [data-cp-size="85"] {
   height: 85%;
 }
-.bar-chart .plot-container [data-cp-size="86"] {
+.column-chart .plot-container [data-cp-size="86"] {
   height: 86%;
 }
-.bar-chart .plot-container [data-cp-size="87"] {
+.column-chart .plot-container [data-cp-size="87"] {
   height: 87%;
 }
-.bar-chart .plot-container [data-cp-size="88"] {
+.column-chart .plot-container [data-cp-size="88"] {
   height: 88%;
 }
-.bar-chart .plot-container [data-cp-size="89"] {
+.column-chart .plot-container [data-cp-size="89"] {
   height: 89%;
 }
-.bar-chart .plot-container [data-cp-size="90"] {
+.column-chart .plot-container [data-cp-size="90"] {
   height: 90%;
 }
-.bar-chart .plot-container [data-cp-size="91"] {
+.column-chart .plot-container [data-cp-size="91"] {
   height: 91%;
 }
-.bar-chart .plot-container [data-cp-size="92"] {
+.column-chart .plot-container [data-cp-size="92"] {
   height: 92%;
 }
-.bar-chart .plot-container [data-cp-size="93"] {
+.column-chart .plot-container [data-cp-size="93"] {
   height: 93%;
 }
-.bar-chart .plot-container [data-cp-size="94"] {
+.column-chart .plot-container [data-cp-size="94"] {
   height: 94%;
 }
-.bar-chart .plot-container [data-cp-size="95"] {
+.column-chart .plot-container [data-cp-size="95"] {
   height: 95%;
 }
-.bar-chart .plot-container [data-cp-size="96"] {
+.column-chart .plot-container [data-cp-size="96"] {
   height: 96%;
 }
-.bar-chart .plot-container [data-cp-size="97"] {
+.column-chart .plot-container [data-cp-size="97"] {
   height: 97%;
 }
-.bar-chart .plot-container [data-cp-size="98"] {
+.column-chart .plot-container [data-cp-size="98"] {
   height: 98%;
 }
-.bar-chart .plot-container [data-cp-size="99"] {
+.column-chart .plot-container [data-cp-size="99"] {
   height: 99%;
 }
-.bar-chart .plot-container [data-cp-size="100"] {
+.column-chart .plot-container [data-cp-size="100"] {
   height: 100%;
 }
-.vertical-chart .plot-container [data-cp-size="0"] {
+.bar-chart .plot-container [data-cp-size="0"] {
   width: 0%;
 }
-.vertical-chart .plot-container [data-cp-size="1"] {
+.bar-chart .plot-container [data-cp-size="1"] {
   width: 1%;
 }
-.vertical-chart .plot-container [data-cp-size="2"] {
+.bar-chart .plot-container [data-cp-size="2"] {
   width: 2%;
 }
-.vertical-chart .plot-container [data-cp-size="3"] {
+.bar-chart .plot-container [data-cp-size="3"] {
   width: 3%;
 }
-.vertical-chart .plot-container [data-cp-size="4"] {
+.bar-chart .plot-container [data-cp-size="4"] {
   width: 4%;
 }
-.vertical-chart .plot-container [data-cp-size="5"] {
+.bar-chart .plot-container [data-cp-size="5"] {
   width: 5%;
 }
-.vertical-chart .plot-container [data-cp-size="6"] {
+.bar-chart .plot-container [data-cp-size="6"] {
   width: 6%;
 }
-.vertical-chart .plot-container [data-cp-size="7"] {
+.bar-chart .plot-container [data-cp-size="7"] {
   width: 7%;
 }
-.vertical-chart .plot-container [data-cp-size="8"] {
+.bar-chart .plot-container [data-cp-size="8"] {
   width: 8%;
 }
-.vertical-chart .plot-container [data-cp-size="9"] {
+.bar-chart .plot-container [data-cp-size="9"] {
   width: 9%;
 }
-.vertical-chart .plot-container [data-cp-size="10"] {
+.bar-chart .plot-container [data-cp-size="10"] {
   width: 10%;
 }
-.vertical-chart .plot-container [data-cp-size="11"] {
+.bar-chart .plot-container [data-cp-size="11"] {
   width: 11%;
 }
-.vertical-chart .plot-container [data-cp-size="12"] {
+.bar-chart .plot-container [data-cp-size="12"] {
   width: 12%;
 }
-.vertical-chart .plot-container [data-cp-size="13"] {
+.bar-chart .plot-container [data-cp-size="13"] {
   width: 13%;
 }
-.vertical-chart .plot-container [data-cp-size="14"] {
+.bar-chart .plot-container [data-cp-size="14"] {
   width: 14%;
 }
-.vertical-chart .plot-container [data-cp-size="15"] {
+.bar-chart .plot-container [data-cp-size="15"] {
   width: 15%;
 }
-.vertical-chart .plot-container [data-cp-size="16"] {
+.bar-chart .plot-container [data-cp-size="16"] {
   width: 16%;
 }
-.vertical-chart .plot-container [data-cp-size="17"] {
+.bar-chart .plot-container [data-cp-size="17"] {
   width: 17%;
 }
-.vertical-chart .plot-container [data-cp-size="18"] {
+.bar-chart .plot-container [data-cp-size="18"] {
   width: 18%;
 }
-.vertical-chart .plot-container [data-cp-size="19"] {
+.bar-chart .plot-container [data-cp-size="19"] {
   width: 19%;
 }
-.vertical-chart .plot-container [data-cp-size="20"] {
+.bar-chart .plot-container [data-cp-size="20"] {
   width: 20%;
 }
-.vertical-chart .plot-container [data-cp-size="21"] {
+.bar-chart .plot-container [data-cp-size="21"] {
   width: 21%;
 }
-.vertical-chart .plot-container [data-cp-size="22"] {
+.bar-chart .plot-container [data-cp-size="22"] {
   width: 22%;
 }
-.vertical-chart .plot-container [data-cp-size="23"] {
+.bar-chart .plot-container [data-cp-size="23"] {
   width: 23%;
 }
-.vertical-chart .plot-container [data-cp-size="24"] {
+.bar-chart .plot-container [data-cp-size="24"] {
   width: 24%;
 }
-.vertical-chart .plot-container [data-cp-size="25"] {
+.bar-chart .plot-container [data-cp-size="25"] {
   width: 25%;
 }
-.vertical-chart .plot-container [data-cp-size="26"] {
+.bar-chart .plot-container [data-cp-size="26"] {
   width: 26%;
 }
-.vertical-chart .plot-container [data-cp-size="27"] {
+.bar-chart .plot-container [data-cp-size="27"] {
   width: 27%;
 }
-.vertical-chart .plot-container [data-cp-size="28"] {
+.bar-chart .plot-container [data-cp-size="28"] {
   width: 28%;
 }
-.vertical-chart .plot-container [data-cp-size="29"] {
+.bar-chart .plot-container [data-cp-size="29"] {
   width: 29%;
 }
-.vertical-chart .plot-container [data-cp-size="30"] {
+.bar-chart .plot-container [data-cp-size="30"] {
   width: 30%;
 }
-.vertical-chart .plot-container [data-cp-size="31"] {
+.bar-chart .plot-container [data-cp-size="31"] {
   width: 31%;
 }
-.vertical-chart .plot-container [data-cp-size="32"] {
+.bar-chart .plot-container [data-cp-size="32"] {
   width: 32%;
 }
-.vertical-chart .plot-container [data-cp-size="33"] {
+.bar-chart .plot-container [data-cp-size="33"] {
   width: 33%;
 }
-.vertical-chart .plot-container [data-cp-size="34"] {
+.bar-chart .plot-container [data-cp-size="34"] {
   width: 34%;
 }
-.vertical-chart .plot-container [data-cp-size="35"] {
+.bar-chart .plot-container [data-cp-size="35"] {
   width: 35%;
 }
-.vertical-chart .plot-container [data-cp-size="36"] {
+.bar-chart .plot-container [data-cp-size="36"] {
   width: 36%;
 }
-.vertical-chart .plot-container [data-cp-size="37"] {
+.bar-chart .plot-container [data-cp-size="37"] {
   width: 37%;
 }
-.vertical-chart .plot-container [data-cp-size="38"] {
+.bar-chart .plot-container [data-cp-size="38"] {
   width: 38%;
 }
-.vertical-chart .plot-container [data-cp-size="39"] {
+.bar-chart .plot-container [data-cp-size="39"] {
   width: 39%;
 }
-.vertical-chart .plot-container [data-cp-size="40"] {
+.bar-chart .plot-container [data-cp-size="40"] {
   width: 40%;
 }
-.vertical-chart .plot-container [data-cp-size="41"] {
+.bar-chart .plot-container [data-cp-size="41"] {
   width: 41%;
 }
-.vertical-chart .plot-container [data-cp-size="42"] {
+.bar-chart .plot-container [data-cp-size="42"] {
   width: 42%;
 }
-.vertical-chart .plot-container [data-cp-size="43"] {
+.bar-chart .plot-container [data-cp-size="43"] {
   width: 43%;
 }
-.vertical-chart .plot-container [data-cp-size="44"] {
+.bar-chart .plot-container [data-cp-size="44"] {
   width: 44%;
 }
-.vertical-chart .plot-container [data-cp-size="45"] {
+.bar-chart .plot-container [data-cp-size="45"] {
   width: 45%;
 }
-.vertical-chart .plot-container [data-cp-size="46"] {
+.bar-chart .plot-container [data-cp-size="46"] {
   width: 46%;
 }
-.vertical-chart .plot-container [data-cp-size="47"] {
+.bar-chart .plot-container [data-cp-size="47"] {
   width: 47%;
 }
-.vertical-chart .plot-container [data-cp-size="48"] {
+.bar-chart .plot-container [data-cp-size="48"] {
   width: 48%;
 }
-.vertical-chart .plot-container [data-cp-size="49"] {
+.bar-chart .plot-container [data-cp-size="49"] {
   width: 49%;
 }
-.vertical-chart .plot-container [data-cp-size="50"] {
+.bar-chart .plot-container [data-cp-size="50"] {
   width: 50%;
 }
-.vertical-chart .plot-container [data-cp-size="51"] {
+.bar-chart .plot-container [data-cp-size="51"] {
   width: 51%;
 }
-.vertical-chart .plot-container [data-cp-size="52"] {
+.bar-chart .plot-container [data-cp-size="52"] {
   width: 52%;
 }
-.vertical-chart .plot-container [data-cp-size="53"] {
+.bar-chart .plot-container [data-cp-size="53"] {
   width: 53%;
 }
-.vertical-chart .plot-container [data-cp-size="54"] {
+.bar-chart .plot-container [data-cp-size="54"] {
   width: 54%;
 }
-.vertical-chart .plot-container [data-cp-size="55"] {
+.bar-chart .plot-container [data-cp-size="55"] {
   width: 55%;
 }
-.vertical-chart .plot-container [data-cp-size="56"] {
+.bar-chart .plot-container [data-cp-size="56"] {
   width: 56%;
 }
-.vertical-chart .plot-container [data-cp-size="57"] {
+.bar-chart .plot-container [data-cp-size="57"] {
   width: 57%;
 }
-.vertical-chart .plot-container [data-cp-size="58"] {
+.bar-chart .plot-container [data-cp-size="58"] {
   width: 58%;
 }
-.vertical-chart .plot-container [data-cp-size="59"] {
+.bar-chart .plot-container [data-cp-size="59"] {
   width: 59%;
 }
-.vertical-chart .plot-container [data-cp-size="60"] {
+.bar-chart .plot-container [data-cp-size="60"] {
   width: 60%;
 }
-.vertical-chart .plot-container [data-cp-size="61"] {
+.bar-chart .plot-container [data-cp-size="61"] {
   width: 61%;
 }
-.vertical-chart .plot-container [data-cp-size="62"] {
+.bar-chart .plot-container [data-cp-size="62"] {
   width: 62%;
 }
-.vertical-chart .plot-container [data-cp-size="63"] {
+.bar-chart .plot-container [data-cp-size="63"] {
   width: 63%;
 }
-.vertical-chart .plot-container [data-cp-size="64"] {
+.bar-chart .plot-container [data-cp-size="64"] {
   width: 64%;
 }
-.vertical-chart .plot-container [data-cp-size="65"] {
+.bar-chart .plot-container [data-cp-size="65"] {
   width: 65%;
 }
-.vertical-chart .plot-container [data-cp-size="66"] {
+.bar-chart .plot-container [data-cp-size="66"] {
   width: 66%;
 }
-.vertical-chart .plot-container [data-cp-size="67"] {
+.bar-chart .plot-container [data-cp-size="67"] {
   width: 67%;
 }
-.vertical-chart .plot-container [data-cp-size="68"] {
+.bar-chart .plot-container [data-cp-size="68"] {
   width: 68%;
 }
-.vertical-chart .plot-container [data-cp-size="69"] {
+.bar-chart .plot-container [data-cp-size="69"] {
   width: 69%;
 }
-.vertical-chart .plot-container [data-cp-size="70"] {
+.bar-chart .plot-container [data-cp-size="70"] {
   width: 70%;
 }
-.vertical-chart .plot-container [data-cp-size="71"] {
+.bar-chart .plot-container [data-cp-size="71"] {
   width: 71%;
 }
-.vertical-chart .plot-container [data-cp-size="72"] {
+.bar-chart .plot-container [data-cp-size="72"] {
   width: 72%;
 }
-.vertical-chart .plot-container [data-cp-size="73"] {
+.bar-chart .plot-container [data-cp-size="73"] {
   width: 73%;
 }
-.vertical-chart .plot-container [data-cp-size="74"] {
+.bar-chart .plot-container [data-cp-size="74"] {
   width: 74%;
 }
-.vertical-chart .plot-container [data-cp-size="75"] {
+.bar-chart .plot-container [data-cp-size="75"] {
   width: 75%;
 }
-.vertical-chart .plot-container [data-cp-size="76"] {
+.bar-chart .plot-container [data-cp-size="76"] {
   width: 76%;
 }
-.vertical-chart .plot-container [data-cp-size="77"] {
+.bar-chart .plot-container [data-cp-size="77"] {
   width: 77%;
 }
-.vertical-chart .plot-container [data-cp-size="78"] {
+.bar-chart .plot-container [data-cp-size="78"] {
   width: 78%;
 }
-.vertical-chart .plot-container [data-cp-size="79"] {
+.bar-chart .plot-container [data-cp-size="79"] {
   width: 79%;
 }
-.vertical-chart .plot-container [data-cp-size="80"] {
+.bar-chart .plot-container [data-cp-size="80"] {
   width: 80%;
 }
-.vertical-chart .plot-container [data-cp-size="81"] {
+.bar-chart .plot-container [data-cp-size="81"] {
   width: 81%;
 }
-.vertical-chart .plot-container [data-cp-size="82"] {
+.bar-chart .plot-container [data-cp-size="82"] {
   width: 82%;
 }
-.vertical-chart .plot-container [data-cp-size="83"] {
+.bar-chart .plot-container [data-cp-size="83"] {
   width: 83%;
 }
-.vertical-chart .plot-container [data-cp-size="84"] {
+.bar-chart .plot-container [data-cp-size="84"] {
   width: 84%;
 }
-.vertical-chart .plot-container [data-cp-size="85"] {
+.bar-chart .plot-container [data-cp-size="85"] {
   width: 85%;
 }
-.vertical-chart .plot-container [data-cp-size="86"] {
+.bar-chart .plot-container [data-cp-size="86"] {
   width: 86%;
 }
-.vertical-chart .plot-container [data-cp-size="87"] {
+.bar-chart .plot-container [data-cp-size="87"] {
   width: 87%;
 }
-.vertical-chart .plot-container [data-cp-size="88"] {
+.bar-chart .plot-container [data-cp-size="88"] {
   width: 88%;
 }
-.vertical-chart .plot-container [data-cp-size="89"] {
+.bar-chart .plot-container [data-cp-size="89"] {
   width: 89%;
 }
-.vertical-chart .plot-container [data-cp-size="90"] {
+.bar-chart .plot-container [data-cp-size="90"] {
   width: 90%;
 }
-.vertical-chart .plot-container [data-cp-size="91"] {
+.bar-chart .plot-container [data-cp-size="91"] {
   width: 91%;
 }
-.vertical-chart .plot-container [data-cp-size="92"] {
+.bar-chart .plot-container [data-cp-size="92"] {
   width: 92%;
 }
-.vertical-chart .plot-container [data-cp-size="93"] {
+.bar-chart .plot-container [data-cp-size="93"] {
   width: 93%;
 }
-.vertical-chart .plot-container [data-cp-size="94"] {
+.bar-chart .plot-container [data-cp-size="94"] {
   width: 94%;
 }
-.vertical-chart .plot-container [data-cp-size="95"] {
+.bar-chart .plot-container [data-cp-size="95"] {
   width: 95%;
 }
-.vertical-chart .plot-container [data-cp-size="96"] {
+.bar-chart .plot-container [data-cp-size="96"] {
   width: 96%;
 }
-.vertical-chart .plot-container [data-cp-size="97"] {
+.bar-chart .plot-container [data-cp-size="97"] {
   width: 97%;
 }
-.vertical-chart .plot-container [data-cp-size="98"] {
+.bar-chart .plot-container [data-cp-size="98"] {
   width: 98%;
 }
-.vertical-chart .plot-container [data-cp-size="99"] {
+.bar-chart .plot-container [data-cp-size="99"] {
   width: 99%;
 }
-.vertical-chart .plot-container [data-cp-size="100"] {
+.bar-chart .plot-container [data-cp-size="100"] {
   width: 100%;
 }
 .scatter-plot .plot-container [data-cp-x="0"] {
