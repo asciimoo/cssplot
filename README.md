@@ -25,10 +25,10 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
 ## Examples
 
-### Bar chart
+### Column chart
 
 ```html
-<div class="bar-chart">
+<div class="column-chart">
     <ul class="plot-container">
         <li data-cp-size="99">99%</li>
         <li data-cp-size="50">50%</li>
@@ -46,10 +46,10 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
   <img src="docs/images/cssplot_bar_chart.png"/>
 </div>
 
-### Vertical chart
+### Bar chart
 
 ```html
-<div class="vertical-chart">
+<div class="bar-chart">
     <ul class="plot-container">
         <li data-cp-size="100">100%</li>
         <li data-cp-size="30">30%</li>
