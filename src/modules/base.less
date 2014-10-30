@@ -1,4 +1,4 @@
-.bar-chart, .vertical-chart, .scatter-plot {
+.column-chart, .bar-chart, .scatter-plot {
     position: relative;
     min-width: 100px;
     min-height: 100px;
@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-.bar-chart .plot-container {
+.column-chart .plot-container {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -21,18 +21,18 @@
     min-height: 100px;
 }
 
-.bar-chart .chart-column,
-.bar-chart [data-cp-size] {
+.column-chart .chart-column,
+.column-chart [data-cp-size] {
     -webkit-flex-grow: 1;
     flex-grow: 1;
     -webkit-align-self: flex-end;
     align-self: flex-end;
 }
 
-.bar-chart .chart-column,
-.vertical-chart .chart-row,
-.bar-chart [data-cp-size],
-.vertical-chart [data-cp-size] {
+.column-chart .chart-column,
+.bar-chart .chart-row,
+.column-chart [data-cp-size],
+.bar-chart [data-cp-size] {
     background: @chart-primary-color;
     color: @chart-primary-label-color;
     list-style: none;
@@ -40,15 +40,20 @@
     box-sizing: border-box;
 }
 
-.vertical-chart {
+.bar-chart {
     clear: both;
 }
 
-.vertical-chart .plot-container {
+.bar-chart .plot-container {
     flex-direction: row;
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.bar-chart .chart-row,
+.bar-chart [data-cp-size] {
+    min-height: 1px;
 }
 
 .scatter-plot .plot-container {
