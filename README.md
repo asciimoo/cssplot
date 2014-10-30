@@ -85,6 +85,19 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
   <img src="docs/images/cssplot_scatter_plot.png"/>
 </div>
 
+## Build
+Using **GruntJS**.
+
+Clone this repo and install dependencies:
+
+	$ npm install
+
+Then run: 
+
+	$ grunt
+	
+It will keep *watching* your changes while you save them and if you have [Livereload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) extension your browser will refresh each time you save your .less file.
+
 ## Conceptions
 
 - [ ] Pie chart
@@ -92,4 +105,4 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 - [ ] Line chart
 - [ ] Axis/scale support
 - [ ] Live demo
-- [ ] Better build script
+- [X] Better build script
