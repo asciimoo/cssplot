@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <style>
     body { font-family: sans-serif; color: #444444; }
-    .bar-chart, .vertical-chart, .scatter-plot { margin: 20px; border: 1px solid #3498db; }
-    .scatter-plot, .bar-chart { height: 300px; }
-    .vertical-chart ul li { min-height: 12px; }
+    .column-chart, .bar-chart, .scatter-plot { margin: 20px; border: 1px solid #3498db; }
+    .scatter-plot, .column-chart { height: 300px; }
+    .bar-chart [data-cp-size] { min-height: 0.8em; }
     .pad ul li { padding: 8px; }
     a { color: #3498db; text-decoration: none; }
     .plot-container li:hover { opacity: 0.8; }
@@ -27,9 +27,9 @@
     </div>
     </div>
     <div class="row">
-            <h2>Bar Chart</h2>
+            <h2>Column Chart</h2>
         <div class="col-lg-6">
-            <div class="bar-chart">
+            <div class="column-chart">
                 <ul class="plot-container">
                     <li data-cp-size="99">99%</li>
                     <li data-cp-size="50">50%</li>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="bar-chart">
+            <div class="column-chart">
                 <ul class="plot-container group-by-number">
                     <li data-cp-size="1"></li>
                     <li data-cp-size="2" data-group="5"></li>
@@ -67,9 +67,9 @@
         </div>
     </div>
     <div class="row">
-            <h2>Vertical Bar Chart</h2>
+            <h2>Bar Chart</h2>
         <div class="col-lg-6">
-            <div class="vertical-chart pad">
+            <div class="bar-chart pad">
                 <ul class="plot-container">
                     <li data-cp-size="100">100%</li>
                     <li data-cp-size="30">30%</li>
@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="vertical-chart">
+            <div class="bar-chart">
                 <ul class="plot-container group-by-number">
                     <li data-cp-size="1"></li>
                     <li data-cp-size="2" data-group="5"></li>
