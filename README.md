@@ -43,7 +43,7 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 ```
 
 <div align="center">
-  <img src="docs/images/cssplot_bar_chart.png"/>
+  <img src="docs/images/cssplot_column_chart.png"/>
 </div>
 
 ### Bar chart
@@ -61,7 +61,7 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 ```
 
 <div align="center">
-  <img src="docs/images/cssplot_vertical_chart.png"/>
+  <img src="docs/images/cssplot_bar_chart.png"/>
 </div>
 
 ### Scatter plot
