@@ -1,0 +1,19 @@
+{
+  "name": "cssplot",
+  "version": "0.1.5",
+  "homepage": "http://asciimoo.github.io/cssplot/",
+  "bugs": {
+    "url": "https://github.com/asciimoo/cssplot/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asciimoo/cssplot"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^0.8.0"
+  }
+}
