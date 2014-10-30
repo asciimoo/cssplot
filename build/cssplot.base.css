@@ -52,7 +52,7 @@
 }
 .bar-chart .chart-row,
 .bar-chart [data-cp-size] {
-  min-height: 1px;
+  min-height: 8px;
 }
 .scatter-plot .plot-container {
   position: absolute;
