@@ -7,6 +7,9 @@
   padding: 0;
   margin: 0;
 }
+.plot-container li {
+  list-style: none;
+}
 .column-chart .plot-container {
   display: -webkit-flex;
   display: flex;
@@ -37,7 +40,6 @@
 .bar-chart [data-cp-size] {
   background: #3498db;
   color: #ffffff;
-  list-style: none;
   border: 1px solid #ffffff;
   box-sizing: border-box;
 }
@@ -53,6 +55,16 @@
 .bar-chart .chart-row,
 .bar-chart [data-cp-size] {
   min-height: 8px;
+}
+.bar-chart.stacked li {
+  display: flex;
+}
+.bar-chart.stacked .group-by-number [data-cp-size] {
+  display: inline-block;
+  border-right: none;
+}
+.bar-chart.stacked .group-by-number [data-cp-size][data-group] {
+  border-left: none;
 }
 .scatter-plot .plot-container {
   position: absolute;
