@@ -9,6 +9,7 @@
 }
 .plot-container li {
   list-style: none;
+  border: 1px solid #ffffff;
 }
 .column-chart .plot-container {
   display: -webkit-flex;
@@ -27,8 +28,24 @@
   margin: 0;
   min-height: 100px;
 }
+.column-chart.stacked li {
+  height: 100%;
+  -webkit-transform: scaleY(-1);
+     -moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+.column-chart.stacked .group-by-number [data-cp-size] {
+  -webkit-transform: scaleY(-1);
+     -moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
 .column-chart .chart-column,
-.column-chart [data-cp-size] {
+.column-chart [data-cp-size],
+.column-chart.stacked li {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-align-self: flex-end;
@@ -40,7 +57,6 @@
 .bar-chart [data-cp-size] {
   background: #3498db;
   color: #ffffff;
-  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 .bar-chart {
@@ -61,10 +77,6 @@
 }
 .bar-chart.stacked .group-by-number [data-cp-size] {
   display: inline-block;
-  border-right: none;
-}
-.bar-chart.stacked .group-by-number [data-cp-size][data-group] {
-  border-left: none;
 }
 .scatter-plot .plot-container {
   position: absolute;
