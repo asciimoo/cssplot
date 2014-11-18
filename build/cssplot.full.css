@@ -7,6 +7,10 @@
   padding: 0;
   margin: 0;
 }
+.column-chart .chart-column,
+.bar-chart .chart-row,
+.column-chart [data-cp-size],
+.bar-chart [data-cp-size],
 .plot-container > * > * {
   list-style: none;
   border: 1px solid #ffffff;
