@@ -1,155 +1,369 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1" />
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1" />
 
-    <title>cssplot</title>
-    <meta name="description" content="cssplot - pure CSS charts and plotting" />
-    <link rel="stylesheet" href="build/cssplot.full.css" type="text/css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="build/cssplot.group.css" type="text/css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-    <style>
-    body { font-family: sans-serif; color: #444444; }
-    .column-chart, .bar-chart, .scatter-plot { margin: 20px; border: 1px solid #3498db; }
-    .scatter-plot, .column-chart { height: 300px; }
-    .bar-chart [data-cp-size] { min-height: 0.8em; }
-    .pad ul li { padding: 8px; }
-    a { color: #3498db; text-decoration: none; }
-    .plot-container li:hover { opacity: 0.8; }
-    img.github { position: absolute; top: 0; right: 0; }
-    </style>
-
-</head>
-<body>
-<a class="github" href="https://github.com/asciimoo/cssplot">
-    <img class="github" alt="Fork me on GitHub" src="docs/images/github_ribbon.png" style="position: absolute; top: 0; right: 0; border: 0;" />
-</a>
-<div class="container">
-    <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h1><a href="https://github.com/asciimoo/cssplot">cssplot</a></h1>
-        <h2><small>Pure CSS Charts</small></h2>
-    </div>
-    </div>
-    <div class="row">
-            <h2>Column Chart</h2>
-        <div class="col-lg-6">
-            <div class="column-chart">
-                <ul class="plot-container">
-                    <li data-cp-size="99">99%</li>
-                    <li data-cp-size="50">50%</li>
-                    <li data-cp-size="30">30%</li>
-                    <li data-cp-size="90">90%</li>
-                    <li data-cp-size="10">10%</li>
-                    <li data-cp-size="70">70%</li>
-                    <li data-cp-size="30">30%</li>
-                    <li data-cp-size="90">90%</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="column-chart">
-                <ul class="plot-container group-by-number">
-                    <li data-cp-size="1"></li>
-                    <li data-cp-size="2" data-group="5"></li>
-                    <li data-cp-size="4"></li>
-                    <li data-cp-size="8" data-group="5"></li>
-                    <li data-cp-size="16"></li>
-                    <li data-cp-size="32" data-group="5"></li>
-                    <li data-cp-size="64"></li>
-                    <li data-cp-size="100" data-group="5"></li>
-                    <li data-cp-size="90"></li>
-                    <li data-cp-size="80" data-group="5"></li>
-                    <li data-cp-size="70"></li>
-                    <li data-cp-size="60" data-group="5"></li>
-                    <li data-cp-size="50"></li>
-                    <li data-cp-size="40" data-group="5"></li>
-                    <li data-cp-size="30"></li>
-                    <li data-cp-size="20" data-group="5"></li>
-                    <li data-cp-size="10"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-            <h2>Bar Chart</h2>
-        <div class="col-lg-6">
-            <div class="bar-chart pad">
-                <ul class="plot-container">
-                    <li data-cp-size="100">100%</li>
-                    <li data-cp-size="30">30%</li>
-                    <li data-cp-size="20">20%</li>
-                    <li data-cp-size="70">70%</li>
-                    <li data-cp-size="90">90%</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="bar-chart">
-                <ul class="plot-container group-by-number">
-                    <li data-cp-size="1"></li>
-                    <li data-cp-size="2" data-group="5"></li>
-                    <li data-cp-size="4"></li>
-                    <li data-cp-size="8" data-group="5"></li>
-                    <li data-cp-size="16"></li>
-                    <li data-cp-size="32" data-group="5"></li>
-                    <li data-cp-size="64"></li>
-                    <li data-cp-size="100" data-group="5"></li>
-                    <li data-cp-size="90"></li>
-                    <li data-cp-size="80" data-group="5"></li>
-                    <li data-cp-size="70"></li>
-                    <li data-cp-size="60" data-group="5"></li>
-                    <li data-cp-size="50"></li>
-                    <li data-cp-size="40" data-group="5"></li>
-                    <li data-cp-size="30"></li>
-                    <li data-cp-size="20" data-group="5"></li>
-                    <li data-cp-size="10"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <h2>Scatter plot</h2>
-        <div class="col-lg-6">
-            <div class="scatter-plot">
-                <ul class="plot-container">
-                    <li data-cp-x="50" data-cp-y="30">a</li>
-                    <li data-cp-x="30" data-cp-y="20">b</li>
-                    <li data-cp-x="10" data-cp-y="5">c</li>
-                    <li data-cp-x="11" data-cp-y="10">d</li>
-                    <li data-cp-x="12" data-cp-y="20">e</li>
-                    <li data-cp-x="13" data-cp-y="30">f</li>
-                    <li data-cp-x="0" data-cp-y="0">h</li>
-                    <li data-cp-x="100" data-cp-y="100">i</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="scatter-plot">
-                <ul class="plot-container">
-                    <li data-cp-x="21" data-cp-y="10">h</li>
-                    <li data-cp-x="22" data-cp-y="20">h</li>
-                    <li data-cp-x="23" data-cp-y="30">h</li>
-                    <li data-cp-x="24" data-cp-y="40">h</li>
-                    <li data-cp-x="25" data-cp-y="50">h</li>
-                    <li data-cp-x="26" data-cp-y="60">h</li>
-                    <li data-cp-x="27" data-cp-y="70">h</li>
-                    <li data-cp-x="28" data-cp-y="80">h</li>
-                    <li data-cp-x="29" data-cp-y="90">h</li>
-                    <li data-cp-x="41" data-cp-y="10">h</li>
-                    <li data-cp-x="42" data-cp-y="20">h</li>
-                    <li data-cp-x="43" data-cp-y="30">h</li>
-                    <li data-cp-x="44" data-cp-y="40">h</li>
-                    <li data-cp-x="45" data-cp-y="50">h</li>
-                    <li data-cp-x="46" data-cp-y="60">h</li>
-                    <li data-cp-x="47" data-cp-y="70">h</li>
-                    <li data-cp-x="48" data-cp-y="80">h</li>
-                    <li data-cp-x="49" data-cp-y="90">h</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
+		<title>cssplot</title>
+		<meta name="description" content="cssplot - pure CSS charts and plotting" />
+		<link rel="stylesheet" href="build/cssplot.full.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="build/cssplot.group.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<style>
+			body { font-family: sans-serif; color: #444444; }
+			.column-chart, .bar-chart, .scatter-plot { margin: 20px; border: 1px solid #3498db; }
+			.scatter-plot, .column-chart { height: 300px; }
+			.bar-chart.stacked [data-cp-size] { min-height: 0.655em; }
+			.bar-chart [data-cp-size],
+			.bar-chart.stacked .pad [data-cp-size] { min-height: 0.8em; }
+			.pad ul [data-cp-size] { padding: 8px; }
+			a { color: #3498db; text-decoration: none; }
+			.plot-container li:hover { opacity: 0.8; }
+			img.github { position: absolute; top: 0; right: 0; }
+		</style>
+	</head>
+	<body>
+		<a class="github" href="https://github.com/asciimoo/cssplot">
+			<img class="github" alt="Fork me on GitHub" src="docs/images/github_ribbon.png" style="position: absolute; top: 0; right: 0; border: 0;" />
+		</a>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<h1><a href="https://github.com/asciimoo/cssplot">cssplot</a></h1>
+					<h2><small>Pure CSS Charts</small></h2>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Column Chart</h2>
+				<div class="col-lg-6">
+					<div class="column-chart">
+						<ul class="plot-container">
+							<li data-cp-size="99">99%</li>
+							<li data-cp-size="50">50%</li>
+							<li data-cp-size="30">30%</li>
+							<li data-cp-size="90">90%</li>
+							<li data-cp-size="10">10%</li>
+							<li data-cp-size="70">70%</li>
+							<li data-cp-size="30">30%</li>
+							<li data-cp-size="90">90%</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="column-chart">
+						<ul class="plot-container group-by-number">
+							<li data-cp-size="1"></li>
+							<li data-cp-size="2" data-group="5"></li>
+							<li data-cp-size="4"></li>
+							<li data-cp-size="8" data-group="5"></li>
+							<li data-cp-size="16"></li>
+							<li data-cp-size="32" data-group="5"></li>
+							<li data-cp-size="64"></li>
+							<li data-cp-size="100" data-group="5"></li>
+							<li data-cp-size="90"></li>
+							<li data-cp-size="80" data-group="5"></li>
+							<li data-cp-size="70"></li>
+							<li data-cp-size="60" data-group="5"></li>
+							<li data-cp-size="50"></li>
+							<li data-cp-size="40" data-group="5"></li>
+							<li data-cp-size="30"></li>
+							<li data-cp-size="20" data-group="5"></li>
+							<li data-cp-size="10"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Stacked Column Chart</h2>
+				<div class="col-lg-6">
+					<div class="column-chart stacked">
+						<ul class="plot-container group-by-number">
+							<li>
+								<div data-cp-size="99">99%</div>
+							</li>
+							<li>
+								<div data-cp-size="50">50%</div>
+								<div data-cp-size="20" data-group="5">20%</div>
+							</li>
+							<li>
+								<div data-cp-size="30">30%</div>
+								<div data-cp-size="15" data-group="5">15%</div>
+							</li>
+							<li>
+								<div data-cp-size="90">90%</div>
+								<div data-cp-size="10" data-group="5">10%</div>
+							</li>
+							<li>
+								<div data-cp-size="10">10%</div>
+								<div data-cp-size="60" data-group="5">60%</div>
+							</li>
+							<li>
+								<div data-cp-size="70">70%</div>
+								<div data-cp-size="25" data-group="5">25%</div>
+							</li>
+							<li>
+								<div data-cp-size="30">30%</div>
+								<div data-cp-size="40" data-group="5">40%</div>
+							</li>
+							<li>
+								<div data-cp-size="90">90%</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="column-chart stacked">
+						<ul class="plot-container group-by-number">
+							<li>
+								<div data-cp-size="1"></div>
+								<div data-cp-size="4" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="2"></div>
+								<div data-cp-size="8" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="4"></div>
+								<div data-cp-size="1" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="8"></div>
+								<div data-cp-size="12" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="16"></div>
+								<div data-cp-size="14" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="32"></div>
+								<div data-cp-size="28" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="64"></div>
+								<div data-cp-size="11" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="100"></div>
+							</li>
+							<li>
+								<div data-cp-size="90"></div>
+								<div data-cp-size="10" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="80"></div>
+								<div data-cp-size="5" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="70"></div>
+								<div data-cp-size="20" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="60"></div>
+								<div data-cp-size="15" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="50"></div>
+								<div data-cp-size="30" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="40"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="30"></div>
+								<div data-cp-size="40" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="20"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="10"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Bar Chart</h2>
+				<div class="col-lg-6">
+					<div class="bar-chart pad">
+						<ul class="plot-container">
+							<li data-cp-size="100">100%</li>
+							<li data-cp-size="30">30%</li>
+							<li data-cp-size="20">20%</li>
+							<li data-cp-size="70">70%</li>
+							<li data-cp-size="90">90%</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="bar-chart">
+						<ul class="plot-container group-by-number">
+							<li data-cp-size="1"></li>
+							<li data-cp-size="2" data-group="5"></li>
+							<li data-cp-size="4"></li>
+							<li data-cp-size="8" data-group="5"></li>
+							<li data-cp-size="16"></li>
+							<li data-cp-size="32" data-group="5"></li>
+							<li data-cp-size="64"></li>
+							<li data-cp-size="100" data-group="5"></li>
+							<li data-cp-size="90"></li>
+							<li data-cp-size="80" data-group="5"></li>
+							<li data-cp-size="70"></li>
+							<li data-cp-size="60" data-group="5"></li>
+							<li data-cp-size="50"></li>
+							<li data-cp-size="40" data-group="5"></li>
+							<li data-cp-size="30"></li>
+							<li data-cp-size="20" data-group="5"></li>
+							<li data-cp-size="10"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Stacked Bar Chart</h2>
+				<div class="col-lg-6">
+					<div class="bar-chart stacked pad">
+						<ul class="plot-container group-by-number">
+							<li>
+								<div data-cp-size="100">100%</div>
+							</li>
+							<li>
+								<div data-cp-size="30">30%</div>
+								<div data-cp-size="30" data-group="5">30%</div>
+							</li>
+							<li>
+								<div data-cp-size="20">20%</div>
+								<div data-cp-size="50" data-group="5">50%</div>
+							</li>
+							<li>
+								<div data-cp-size="70">70%</div>
+								<div data-cp-size="20" data-group="5">20%</div>
+							</li>
+							<li>
+								<div data-cp-size="90">90%</div>
+								<div data-cp-size="10" data-group="5">10%</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="bar-chart stacked">
+						<ul class="plot-container group-by-number">
+							<li>
+								<div data-cp-size="1"></div>
+								<div data-cp-size="4" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="2"></div>
+								<div data-cp-size="8" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="4"></div>
+								<div data-cp-size="1" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="8"></div>
+								<div data-cp-size="12" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="16"></div>
+								<div data-cp-size="14" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="32"></div>
+								<div data-cp-size="28" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="64"></div>
+								<div data-cp-size="11" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="100"></div>
+							</li>
+							<li>
+								<div data-cp-size="90"></div>
+								<div data-cp-size="10" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="80"></div>
+								<div data-cp-size="5" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="70"></div>
+								<div data-cp-size="20" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="60"></div>
+								<div data-cp-size="15" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="50"></div>
+								<div data-cp-size="30" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="40"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="30"></div>
+								<div data-cp-size="40" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="20"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+							<li>
+								<div data-cp-size="10"></div>
+								<div data-cp-size="45" data-group="5"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h2>Scatter plot</h2>
+				<div class="col-lg-6">
+					<div class="scatter-plot">
+						<ul class="plot-container">
+							<li data-cp-x="50" data-cp-y="30">a</li>
+							<li data-cp-x="30" data-cp-y="20">b</li>
+							<li data-cp-x="10" data-cp-y="5">c</li>
+							<li data-cp-x="11" data-cp-y="10">d</li>
+							<li data-cp-x="12" data-cp-y="20">e</li>
+							<li data-cp-x="13" data-cp-y="30">f</li>
+							<li data-cp-x="0" data-cp-y="0">h</li>
+							<li data-cp-x="100" data-cp-y="100">i</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="scatter-plot">
+						<ul class="plot-container">
+							<li data-cp-x="21" data-cp-y="10">h</li>
+							<li data-cp-x="22" data-cp-y="20">h</li>
+							<li data-cp-x="23" data-cp-y="30">h</li>
+							<li data-cp-x="24" data-cp-y="40">h</li>
+							<li data-cp-x="25" data-cp-y="50">h</li>
+							<li data-cp-x="26" data-cp-y="60">h</li>
+							<li data-cp-x="27" data-cp-y="70">h</li>
+							<li data-cp-x="28" data-cp-y="80">h</li>
+							<li data-cp-x="29" data-cp-y="90">h</li>
+							<li data-cp-x="41" data-cp-y="10">h</li>
+							<li data-cp-x="42" data-cp-y="20">h</li>
+							<li data-cp-x="43" data-cp-y="30">h</li>
+							<li data-cp-x="44" data-cp-y="40">h</li>
+							<li data-cp-x="45" data-cp-y="50">h</li>
+							<li data-cp-x="46" data-cp-y="60">h</li>
+							<li data-cp-x="47" data-cp-y="70">h</li>
+							<li data-cp-x="48" data-cp-y="80">h</li>
+							<li data-cp-x="49" data-cp-y="90">h</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
