@@ -46,6 +46,49 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
   <img src="docs/images/cssplot_column_chart.png"/>
 </div>
 
+### Stacked Column chart
+
+```html
+<div class="column-chart stacked">
+  <ul class="plot-container group-by-number">
+    <li>
+      <div data-cp-size="99">99%</div>
+    </li>
+    <li>
+      <div data-cp-size="50">50%</div>
+      <div data-cp-size="20" data-group="5">20%</div>
+    </li>
+    <li>
+      <div data-cp-size="30">30%</div>
+      <div data-cp-size="15" data-group="5">15%</div>
+    </li>
+    <li>
+      <div data-cp-size="90">90%</div>
+      <div data-cp-size="10" data-group="5">10%</div>
+    </li>
+    <li>
+      <div data-cp-size="10">10%</div>
+      <div data-cp-size="60" data-group="5">60%</div>
+    </li>
+    <li>
+      <div data-cp-size="70">70%</div>
+      <div data-cp-size="25" data-group="5">25%</div>
+    </li>
+    <li>
+      <div data-cp-size="30">30%</div>
+      <div data-cp-size="40" data-group="5">40%</div>
+    </li>
+    <li>
+      <div data-cp-size="90">90%</div>
+    </li>
+  </ul>
+</div>
+```
+
+<div align="center">
+  <img src="docs/images/cssplot_stacked_column_chart.png"/>
+</div>
+
 ### Bar chart
 
 ```html
@@ -62,6 +105,38 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 
 <div align="center">
   <img src="docs/images/cssplot_bar_chart.png"/>
+</div>
+
+### Stacked Bar chart
+
+```html
+<div class="bar-chart stacked pad">
+    <ul class="plot-container group-by-number">
+        <li>
+            <div data-cp-size="100">100%</div>
+        </li>
+        <li>
+            <div data-cp-size="30">30%</div>
+            <div data-cp-size="30" data-group="5">30%</div>
+        </li>
+        <li>
+            <div data-cp-size="20">20%</div>
+            <div data-cp-size="50" data-group="5">50%</div>
+        </li>
+        <li>
+            <div data-cp-size="70">70%</div>
+            <div data-cp-size="20" data-group="5">20%</div>
+        </li>
+        <li>
+            <div data-cp-size="90">90%</div>
+            <div data-cp-size="10" data-group="5">10%</div>
+        </li>
+    </ul>
+</div>
+```
+
+<div align="center">
+  <img src="docs/images/cssplot_stacked_bar_chart.png"/>
 </div>
 
 ### Scatter plot
@@ -88,7 +163,6 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
 ## Conceptions
 
 - [ ] Pie chart
-- [ ] Stacked bar chart
 - [ ] Line chart
 - [ ] Axis/scale support
 - [ ] Live demo
