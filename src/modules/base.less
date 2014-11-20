@@ -6,7 +6,11 @@
     margin: 0;
 }
 
-.plot-container li {
+.column-chart .chart-column,
+.bar-chart .chart-row,
+.column-chart [data-cp-size],
+.bar-chart [data-cp-size],
+.plot-container > * > * {
   list-style: none;
   border: 1px solid #ffffff;
 }
@@ -26,7 +30,7 @@
     min-height: 100px;
 }
 
-.column-chart.stacked li {
+.column-chart.stacked > * > * {
   height: 100%;
   -webkit-transform: scaleY(-1);
      -moz-transform: scaleY(-1);
@@ -45,7 +49,7 @@
 
 .column-chart .chart-column,
 .column-chart [data-cp-size],
-.column-chart.stacked li {
+.column-chart.stacked > * > * {
     -webkit-flex-grow: 1;
     flex-grow: 1;
     -webkit-align-self: flex-end;
@@ -77,7 +81,7 @@
     min-height: 8px;
 }
 
-.bar-chart.stacked li {
+.bar-chart.stacked > * > * {
   display: flex;
 }
 
