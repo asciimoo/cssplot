@@ -1,0 +1,121 @@
+.plot-container[data-cp-animation="fade"] > * {
+  opacity: 0;
+  -webkit-animation: chart-opacity 1s ease forwards;
+  animation: chart-opacity 1s ease forwards;
+}
+.plot-container[data-cp-animation="grow"] > * {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: chart-grow 1s forwards;
+  animation: chart-grow 1s forwards;
+}
+.plot-container[data-cp-animation="grow-down"] > *,
+.plot-container[data-cp-animation="grow-up"] > * {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-animation: chart-grow-y 1s forwards;
+  animation: chart-grow-y 1s forwards;
+}
+.plot-container[data-cp-animation="grow-right"] > *,
+.plot-container[data-cp-animation="grow-left"] > * {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-animation: chart-grow-x 1s forwards;
+  animation: chart-grow-x 1s forwards;
+}
+.plot-container[data-cp-animation="grow-down"] > * { transform-origin: center top; }
+.plot-container[data-cp-animation="grow-right"] > * { transform-origin: left center; }
+.plot-container[data-cp-animation="grow-up"] > * { transform-origin: center bottom; }
+.plot-container[data-cp-animation="grow-left"] > * { transform-origin: right center; }
+.plot-container[data-cp-animation="slide-down"],
+.plot-container[data-cp-animation="slide-right"],
+.plot-container[data-cp-animation="slide-up"],
+.plot-container[data-cp-animation="slide-left"] { overflow: hidden; }
+.plot-container[data-cp-animation="slide-down"] > * {
+  transform: translateY(-100%);
+  opacity: 0;
+  -webkit-animation: chart-slide-down 1s forwards;
+  animation: chart-slide-down 1s forwards;
+}
+.plot-container[data-cp-animation="slide-right"] > * {
+  transform: translateX(-100%);
+  opacity: 0;
+  -webkit-animation: chart-slide-right 1s forwards;
+  animation: chart-slide-right 1s forwards;
+}
+.plot-container[data-cp-animation="slide-up"] > * {
+  transform: translateY(100%);
+  opacity: 0;
+  -webkit-animation: chart-slide-up 1s forwards;
+  animation: chart-slide-up 1s forwards;
+}
+.plot-container[data-cp-animation="slide-left"] > * {
+  transform: translateX(100%);
+  opacity: 0;
+  -webkit-animation: chart-slide-left 1s forwards;
+  animation: chart-slide-left 1s forwards;
+}
+@-webkit-keyframes chart-opacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes chart-opacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-webkit-keyframes chart-grow {
+  from { -webkit-transform: scale(0); }
+  to { -webkit-transform: scale(1); }
+}
+@keyframes chart-grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+@-webkit-keyframes chart-grow-x {
+  from { -webkit-transform: scaleX(0); }
+  to { -webkit-transform: scaleX(1); }
+}
+@keyframes chart-grow-x {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@-webkit-keyframes chart-grow-y {
+  from { -webkit-transform: scaleY(0); }
+  to { -webkit-transform: scaleY(1); }
+}
+@keyframes chart-grow-y {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+@-webkit-keyframes chart-slide-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes chart-slide-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@-webkit-keyframes chart-slide-right {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes chart-slide-right {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@-webkit-keyframes chart-slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes chart-slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@-webkit-keyframes chart-slide-left {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes chart-slide-left {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
