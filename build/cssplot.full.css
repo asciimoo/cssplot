@@ -33,15 +33,16 @@
   margin: 0;
   min-height: 100px;
 }
-.column-chart.stacked > * > * {
-  height: 100%;
+.column-chart.stacked .plot-container.group-by > * { height: 100%; }
+.column-chart.stacked .plot-container.group-by:not([data-cp-animation]) > *,
+.column-chart.stacked .plot-container.group-by[data-cp-animation="fade"] > * {
   -webkit-transform: scaleY(-1);
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
   -ms-transform: scaleY(-1);
   transform: scaleY(-1);
 }
-.column-chart.stacked .group-by [data-cp-size] {
+.column-chart.stacked .plot-container.group-by [data-cp-size] {
   -webkit-transform: scaleY(-1);
   -moz-transform: scaleY(-1);
   -o-transform: scaleY(-1);
@@ -106,28 +107,44 @@
 }
 .plot-container[data-cp-animation="fade"] > * {
   opacity: 0;
-  -webkit-animation: chart-opacity 1s ease forwards;
-  animation: chart-opacity 1s ease forwards;
+  -webkit-animation-name: chart-opacity;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-opacity;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow"] > * {
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-animation: chart-grow 1s forwards;
-  animation: chart-grow 1s forwards;
+  -webkit-animation-name: chart-grow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-grow;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow-down"] > *,
 .plot-container[data-cp-animation="grow-up"] > * {
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  -webkit-animation: chart-grow-y 1s forwards;
-  animation: chart-grow-y 1s forwards;
+  -webkit-animation-name: chart-grow-y;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-grow-y;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow-right"] > *,
 .plot-container[data-cp-animation="grow-left"] > * {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-animation: chart-grow-x 1s forwards;
-  animation: chart-grow-x 1s forwards;
+  -webkit-animation-name: chart-grow-x;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-grow-x;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow-down"] > * { transform-origin: center top; }
 .plot-container[data-cp-animation="grow-right"] > * { transform-origin: left center; }
@@ -139,23 +156,39 @@
 .plot-container[data-cp-animation="slide-left"] { overflow: hidden; }
 .plot-container[data-cp-animation="slide-down"] > * {
   opacity: 0;
-  -webkit-animation: chart-slide-down 1s forwards;
-  animation: chart-slide-down 1s forwards;
+  -webkit-animation-name: chart-slide-down;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-slide-down;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="slide-right"] > * {
   opacity: 0;
-  -webkit-animation: chart-slide-right 1s forwards;
-  animation: chart-slide-right 1s forwards;
+  -webkit-animation-name: chart-slide-right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-slide-right;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="slide-up"] > * {
   opacity: 0;
-  -webkit-animation: chart-slide-up 1s forwards;
-  animation: chart-slide-up 1s forwards;
+  -webkit-animation-name: chart-slide-up;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-slide-up;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="slide-left"] > * {
   opacity: 0;
-  -webkit-animation: chart-slide-left 1s forwards;
-  animation: chart-slide-left 1s forwards;
+  -webkit-animation-name: chart-slide-left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: chart-slide-left;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
 }
 @-webkit-keyframes chart-opacity {
   from { opacity: 0; }
@@ -220,6 +253,120 @@
 @keyframes chart-slide-left {
   from { transform: translateX(100%); }
   to { transform: translateX(0); opacity: 1; }
+}
+.column-chart.stacked .plot-container[data-cp-animation="grow"] > *{
+  -webkit-animation-name: stacked-column-chart-grow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-grow;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="grow-down"] > *,
+.column-chart.stacked .plot-container[data-cp-animation="grow-up"] > * {
+  -webkit-animation-name: stacked-column-chart-grow-y;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-grow-y;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="grow-right"] > *,
+.column-chart.stacked .plot-container[data-cp-animation="grow-left"] > * {
+  -webkit-animation-name: stacked-column-chart-grow-x;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-grow-x;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="slide-down"] > * {;
+  -webkit-animation-name: stacked-column-chart-slide-down;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-slide-down;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="slide-right"] > * {;
+  -webkit-animation-name: stacked-column-chart-slide-right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-slide-right;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="slide-up"] > * {
+  -webkit-animation-name: stacked-column-chart-slide-up;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-slide-up;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+.column-chart.stacked .plot-container[data-cp-animation="slide-left"] > * {
+  -webkit-animation-name: stacked-column-chart-slide-left;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: stacked-column-chart-slide-left;
+  animation-duration: 1s;
+  animation-fill-mode:; forwards;
+}
+@-webkit-keyframes stacked-column-chart-grow {
+  from { -webkit-transform: scaleX(0) scaleY(0); }
+  to { -webkit-transform: scaleX(1) scaleY(-1); }
+}
+@keyframes stacked-column-chart-grow {
+  from { transform: scaleX(0) scaleY(0); }
+  to { transform: scaleX(1) scaleY(-1); }
+}
+@-webkit-keyframes stacked-column-chart-grow-x {
+  from { -webkit-transform: scaleX(0) scaleY(-1); }
+  to { -webkit-transform: scaleX(1) scaleY(-1); }
+}
+@keyframes stacked-column-chart-grow-x {
+  from { transform: scaleX(0) scaleY(-1); }
+  to { transform: scaleX(1) scaleY(-1); }
+}
+@-webkit-keyframes stacked-column-chart-grow-y {
+  from { -webkit-transform: scaleY(0) translateY(100%); }
+  to { -webkit-transform: scaleY(-1) translateY(100%); }
+}
+@keyframes stacked-column-chart-grow-y {
+  from { transform: scaleY(0) translateY(100%); }
+  to { transform: scaleY(-1) translateY(100%); }
+}
+@-webkit-keyframes stacked-column-chart-slide-down {
+  from { transform: translateY(-100%) scaleY(-1); }
+  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@keyframes stacked-column-chart-slide-down {
+  from { transform: translateY(-100%) scaleY(-1); }
+  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@-webkit-keyframes stacked-column-chart-slide-right {
+  from { transform: translateX(-100%) scaleY(-1); }
+  to { transform: translateX(0) scaleY(-1); opacity: 1; }
+}
+@keyframes stacked-column-chart-slide-right {
+  from { transform: translateX(-100%) scaleY(-1); }
+  to { transform: translateX(0) scaleY(-1); opacity: 1; }
+}
+@-webkit-keyframes stacked-column-chart-slide-up {
+  from { transform: translateY(100%) scaleY(-1); }
+  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@keyframes stacked-column-chart-slide-up {
+  from { transform: translateY(100%) scaleY(-1); }
+  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@-webkit-keyframes stacked-column-chart-slide-left {
+  from { transform: translateX(100%) scaleY(-1); }
+  to { transform: translateX(0) scaleY(-1); opacity: 1; }
+}
+@keyframes stacked-column-chart-slide-left {
+  from { transform: translateX(100%) scaleY(-1); }
+  to { transform: translateX(0) scaleY(-1); opacity: 1; }
 }
 .column-chart .plot-container [data-cp-size="0"] {
   height: 0%;
