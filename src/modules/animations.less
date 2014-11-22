@@ -32,25 +32,21 @@
 .plot-container[data-cp-animation="slide-up"],
 .plot-container[data-cp-animation="slide-left"] { overflow: hidden; }
 .plot-container[data-cp-animation="slide-down"] > * {
-  transform: translateY(-100%);
   opacity: 0;
   -webkit-animation: chart-slide-down 1s forwards;
   animation: chart-slide-down 1s forwards;
 }
 .plot-container[data-cp-animation="slide-right"] > * {
-  transform: translateX(-100%);
   opacity: 0;
   -webkit-animation: chart-slide-right 1s forwards;
   animation: chart-slide-right 1s forwards;
 }
 .plot-container[data-cp-animation="slide-up"] > * {
-  transform: translateY(100%);
   opacity: 0;
   -webkit-animation: chart-slide-up 1s forwards;
   animation: chart-slide-up 1s forwards;
 }
 .plot-container[data-cp-animation="slide-left"] > * {
-  transform: translateX(100%);
   opacity: 0;
   -webkit-animation: chart-slide-left 1s forwards;
   animation: chart-slide-left 1s forwards;
@@ -88,34 +84,34 @@
   to { transform: scaleY(1); }
 }
 @-webkit-keyframes chart-slide-down {
-  from { transform: translateY(-100%); opacity: 0; }
+  from { transform: translateY(-100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @keyframes chart-slide-down {
-  from { transform: translateY(-100%); opacity: 0; }
+  from { transform: translateY(-100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-right {
-  from { transform: translateX(-100%); opacity: 0; }
+  from { transform: translateX(-100%); }
   to { transform: translateX(0); opacity: 1; }
 }
 @keyframes chart-slide-right {
-  from { transform: translateX(-100%); opacity: 0; }
+  from { transform: translateX(-100%); }
   to { transform: translateX(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-up {
-  from { transform: translateY(100%); opacity: 0; }
+  from { transform: translateY(100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @keyframes chart-slide-up {
-  from { transform: translateY(100%); opacity: 0; }
+  from { transform: translateY(100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-left {
-  from { transform: translateX(100%); opacity: 0; }
+  from { transform: translateX(100%); }
   to { transform: translateX(0); opacity: 1; }
 }
 @keyframes chart-slide-left {
-  from { transform: translateX(100%); opacity: 0; }
+  from { transform: translateX(100%); }
   to { transform: translateX(0); opacity: 1; }
 }
