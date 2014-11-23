@@ -3,46 +3,77 @@
   -webkit-animation-name: chart-opacity;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-opacity;
+  -moz-animation-name: chart-opacity;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-opacity;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow"] > * {
   -webkit-transform: scale(0);
+  -moz-transform: scale(0);
   transform: scale(0);
   -webkit-animation-name: chart-grow;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-grow;
+  -moz-animation-name: chart-grow;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-grow;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow-down"] > *,
 .plot-container[data-cp-animation="grow-up"] > * {
   -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-animation-name: chart-grow-y;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-grow-y;
+  -moz-animation-name: chart-grow-y;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-grow-y;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
 .plot-container[data-cp-animation="grow-right"] > *,
 .plot-container[data-cp-animation="grow-left"] > * {
   -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-animation-name: chart-grow-x;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-grow-x;
+  -moz-animation-name: chart-grow-x;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-grow-x;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
-.plot-container[data-cp-animation="grow-down"] > * { transform-origin: center top; }
-.plot-container[data-cp-animation="grow-right"] > * { transform-origin: left center; }
-.plot-container[data-cp-animation="grow-up"] > * { transform-origin: center bottom; }
-.plot-container[data-cp-animation="grow-left"] > * { transform-origin: right center; }
+.plot-container[data-cp-animation="grow-down"] > * {
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	transform-origin: center top;
+}
+.plot-container[data-cp-animation="grow-right"] > * {
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	transform-origin: left center;
+}
+.plot-container[data-cp-animation="grow-up"] > * {
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	transform-origin: center bottom;
+}
+.plot-container[data-cp-animation="grow-left"] > * {
+	-webkit-transform-origin: right center;
+	-moz-transform-origin: right center;
+	transform-origin: right center;
+}
 .plot-container[data-cp-animation="slide-down"],
 .plot-container[data-cp-animation="slide-right"],
 .plot-container[data-cp-animation="slide-up"],
@@ -52,7 +83,10 @@
   -webkit-animation-name: chart-slide-down;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-slide-down;
+  -moz-animation-name: chart-slide-down;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-slide-down;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -61,7 +95,10 @@
   -webkit-animation-name: chart-slide-right;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-slide-right;
+  -moz-animation-name: chart-slide-right;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-slide-right;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -70,7 +107,10 @@
   -webkit-animation-name: chart-slide-up;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-slide-up;
+  -moz-animation-name: chart-slide-up;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-slide-up;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -79,11 +119,18 @@
   -webkit-animation-name: chart-slide-left;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: chart-slide-left;
+  -moz-animation-name: chart-slide-left;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: chart-slide-left;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
 @-webkit-keyframes chart-opacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-moz-keyframes chart-opacity {
   from { opacity: 0; }
   to { opacity: 1; }
 }
@@ -95,6 +142,10 @@
   from { -webkit-transform: scale(0); }
   to { -webkit-transform: scale(1); }
 }
+@-moz-keyframes chart-grow {
+  from { -moz-transform: scale(0); }
+  to { -moz-transform: scale(1); }
+}
 @keyframes chart-grow {
   from { transform: scale(0); }
   to { transform: scale(1); }
@@ -102,6 +153,10 @@
 @-webkit-keyframes chart-grow-x {
   from { -webkit-transform: scaleX(0); }
   to { -webkit-transform: scaleX(1); }
+}
+@-moz-keyframes chart-grow-x {
+  from { -moz-transform: scaleX(0); }
+  to { -moz-transform: scaleX(1); }
 }
 @keyframes chart-grow-x {
   from { transform: scaleX(0); }
@@ -111,37 +166,57 @@
   from { -webkit-transform: scaleY(0); }
   to { -webkit-transform: scaleY(1); }
 }
+@-moz-keyframes chart-grow-y {
+  from { -moz-transform: scaleY(0); }
+  to { -moz-transform: scaleY(1); }
+}
 @keyframes chart-grow-y {
   from { transform: scaleY(0); }
   to { transform: scaleY(1); }
 }
 @-webkit-keyframes chart-slide-down {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0); opacity: 1; }
+  from { -webkit-transform: translateY(-100%); }
+  to { -webkit-transform: translateY(0); opacity: 1; }
+}
+@-moz-keyframes chart-slide-down {
+  from { -moz-transform: translateY(-100%); }
+  to { -moz-transform: translateY(0); opacity: 1; }
 }
 @keyframes chart-slide-down {
   from { transform: translateY(-100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-right {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); opacity: 1; }
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(0); opacity: 1; }
+}
+@-moz-keyframes chart-slide-right {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(0); opacity: 1; }
 }
 @keyframes chart-slide-right {
   from { transform: translateX(-100%); }
   to { transform: translateX(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-up {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); opacity: 1; }
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(0); opacity: 1; }
+}
+@-moz-keyframes chart-slide-up {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(0); opacity: 1; }
 }
 @keyframes chart-slide-up {
   from { transform: translateY(100%); }
   to { transform: translateY(0); opacity: 1; }
 }
 @-webkit-keyframes chart-slide-left {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); opacity: 1; }
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(0); opacity: 1; }
+}
+@-moz-keyframes chart-slide-left {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(0); opacity: 1; }
 }
 @keyframes chart-slide-left {
   from { transform: translateX(100%); }
@@ -151,7 +226,10 @@
   -webkit-animation-name: stacked-column-chart-grow;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-grow;
+  -moz-animation-name: stacked-column-chart-grow;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-grow;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -160,7 +238,10 @@
   -webkit-animation-name: stacked-column-chart-grow-y;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-grow-y;
+  -moz-animation-name: stacked-column-chart-grow-y;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-grow-y;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -169,7 +250,10 @@
   -webkit-animation-name: stacked-column-chart-grow-x;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-grow-x;
+  -moz-animation-name: tacked-column-chart-grow-x;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-grow-x;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -177,7 +261,10 @@
   -webkit-animation-name: stacked-column-chart-slide-down;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-slide-down;
+  -moz-animation-name: stacked-column-chart-slide-down;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-slide-down;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -185,7 +272,10 @@
   -webkit-animation-name: stacked-column-chart-slide-right;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-slide-right;
+  -moz-animation-name: stacked-column-chart-slide-right;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-slide-right;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -193,7 +283,10 @@
   -webkit-animation-name: stacked-column-chart-slide-up;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-slide-up;
+  -moz-animation-name: stacked-column-chart-slide-up;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-slide-up;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
@@ -201,13 +294,20 @@
   -webkit-animation-name: stacked-column-chart-slide-left;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation: stacked-column-chart-slide-left;
+  -moz-animation-name: stacked-column-chart-slide-left;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  animation-name: stacked-column-chart-slide-left;
   animation-duration: 1s;
   animation-fill-mode:; forwards;
 }
 @-webkit-keyframes stacked-column-chart-grow {
   from { -webkit-transform: scaleX(0) scaleY(0); }
   to { -webkit-transform: scaleX(1) scaleY(-1); }
+}
+@-moz-keyframes stacked-column-chart-grow {
+  from { -moz-transform: scaleX(0) scaleY(0); }
+  to { -moz-transform: scaleX(1) scaleY(-1); }
 }
 @keyframes stacked-column-chart-grow {
   from { transform: scaleX(0) scaleY(0); }
@@ -217,6 +317,10 @@
   from { -webkit-transform: scaleX(0) scaleY(-1); }
   to { -webkit-transform: scaleX(1) scaleY(-1); }
 }
+@-moz-keyframes stacked-column-chart-grow-x {
+  from { -moz-transform: scaleX(0) scaleY(-1); }
+  to { -moz-transform: scaleX(1) scaleY(-1); }
+}
 @keyframes stacked-column-chart-grow-x {
   from { transform: scaleX(0) scaleY(-1); }
   to { transform: scaleX(1) scaleY(-1); }
@@ -225,37 +329,57 @@
   from { -webkit-transform: scaleY(0) translateY(100%); }
   to { -webkit-transform: scaleY(-1) translateY(100%); }
 }
+@-moz-keyframes stacked-column-chart-grow-y {
+  from { -moz-transform: scaleY(0) translateY(100%); }
+  to { -moz-transform: scaleY(-1) translateY(100%); }
+}
 @keyframes stacked-column-chart-grow-y {
   from { transform: scaleY(0) translateY(100%); }
   to { transform: scaleY(-1) translateY(100%); }
 }
 @-webkit-keyframes stacked-column-chart-slide-down {
-  from { transform: translateY(-100%) scaleY(-1); }
-  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+  from { -webkit-transform: translateY(-100%) scaleY(-1); }
+  to { -webkit-transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@-moz-keyframes stacked-column-chart-slide-down {
+  from { -moz-transform: translateY(-100%) scaleY(-1); }
+  to { -moz-transform: translateY(0) scaleY(-1); opacity: 1; }
 }
 @keyframes stacked-column-chart-slide-down {
   from { transform: translateY(-100%) scaleY(-1); }
   to { transform: translateY(0) scaleY(-1); opacity: 1; }
 }
-@-webkit-keyframes stacked-column-chart-slide-right {
-  from { transform: translateX(-100%) scaleY(-1); }
-  to { transform: translateX(0) scaleY(-1); opacity: 1; }
+@-webkit-keyframes stacked-column-chart-slide-down {
+  from { -webkit-transform: translateY(-100%) scaleY(-1); }
+  to { -webkit-transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@-moz-keyframes stacked-column-chart-slide-down {
+  from { -moz-transform: translateY(-100%) scaleY(-1); }
+  to { -moz-transform: translateY(0) scaleY(-1); opacity: 1; }
 }
 @keyframes stacked-column-chart-slide-right {
   from { transform: translateX(-100%) scaleY(-1); }
   to { transform: translateX(0) scaleY(-1); opacity: 1; }
 }
 @-webkit-keyframes stacked-column-chart-slide-up {
-  from { transform: translateY(100%) scaleY(-1); }
-  to { transform: translateY(0) scaleY(-1); opacity: 1; }
+  from { -webkit-transform: translateY(100%) scaleY(-1); }
+  to { -webkit-transform: translateY(0) scaleY(-1); opacity: 1; }
+}
+@-moz-keyframes stacked-column-chart-slide-up {
+  from { -moz-transform: translateY(100%) scaleY(-1); }
+  to { -moz-transform: translateY(0) scaleY(-1); opacity: 1; }
 }
 @keyframes stacked-column-chart-slide-up {
   from { transform: translateY(100%) scaleY(-1); }
   to { transform: translateY(0) scaleY(-1); opacity: 1; }
 }
 @-webkit-keyframes stacked-column-chart-slide-left {
-  from { transform: translateX(100%) scaleY(-1); }
-  to { transform: translateX(0) scaleY(-1); opacity: 1; }
+  from { -webkit-transform: translateX(100%) scaleY(-1); }
+  to { -webkit-transform: translateX(0) scaleY(-1); opacity: 1; }
+}
+@-moz-keyframes stacked-column-chart-slide-left {
+  from { -moz-transform: translateX(100%) scaleY(-1); }
+  to { -moz-transform: translateX(0) scaleY(-1); opacity: 1; }
 }
 @keyframes stacked-column-chart-slide-left {
   from { transform: translateX(100%) scaleY(-1); }

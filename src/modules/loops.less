@@ -22,6 +22,7 @@
   .timing_loop((@time_counter - 1));
   [data-cp-timing="@{time_counter}"] {
     -webkit-animation-delay: round(@time_counter * 0.1s, 1);
+    -moz-animation-delay: round(@time_counter * 0.1s, 1);
     animation-delay: round(@time_counter * 0.1s, 1);
   };
 }
