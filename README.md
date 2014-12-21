@@ -120,5 +120,6 @@ It will keep *watching* your changes while you save them and if you have [Livere
 - [ ] Stacked bar chart
 - [ ] Line chart
 - [ ] Axis/scale support
-- [ ] Live demo
+- [X] Live demo
 - [X] Better build script
+- [X] Animated charts
