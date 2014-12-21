@@ -85,6 +85,22 @@ Alternatively `cssplot.base.css` can be used alone with the following modificati
   <img src="docs/images/cssplot_scatter_plot.png"/>
 </div>
 
+### Animated Graphs
+
+For animated charts, add the `data-cp-transition` attribute to the `plot-container`; the values are: `fade` and `grow` and they're the two types of animation availables. Then, each point in the graph must have the `data-cp-delay` attribute with a value that must be a number higher than zero and represents the delay of the animation (in miliseconds).
+
+```html
+<div class="bar-plot">
+    <ul class="plot-container" data-cp-transition="0.3">
+        <li data-cp-delay="1" data-cp-size="1"></li>
+        <li data-cp-delay="2" data-cp-size="2"></li>
+        <li data-cp-delay="3" data-cp-size="4"></li>
+        <li data-cp-delay="4" data-cp-size="8"></li>
+        <li data-cp-delay="5" data-cp-size="16"></li>
+    </ul>
+</div>
+```
+
 ## Build
 Using **GruntJS**.
 
