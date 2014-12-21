@@ -17,7 +17,8 @@ module.exports = function(grunt) {
         files: {
             'build/cssplot.base.css': 'src/cssplot.base.less',
             'build/cssplot.full.css': 'src/cssplot.full.less',
-            'build/cssplot.group.css': 'src/cssplot.group.less'
+            'build/cssplot.group.css': 'src/cssplot.group.less',
+            'build/cssplot.animations.css': 'src/cssplot.animations.less'
         }
       } 
     },
